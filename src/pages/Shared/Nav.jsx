@@ -51,7 +51,6 @@ const Nav = () => {
                                     <option>Booked-Services</option>
                                     <option>Service-To-Do</option>
                                 </select>
-
                             </NavLink>
 
                         </li>
