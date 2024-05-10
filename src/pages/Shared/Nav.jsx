@@ -1,11 +1,15 @@
+
 import { NavLink } from "react-router-dom";
 
 
+
 const Nav = () => {
+
+
+    
     return (
         <div>
-
-
+          
             <div className=" bg-base-100 flex justify-between items-center py-6">
                 <div className="">
                     <div className="dropdown">
@@ -19,7 +23,7 @@ const Nav = () => {
 
                             <li className="font-semibold text-xl">
                                 <NavLink >
-                                    <select value={"Dashboard"} className="">
+                                    <select defaultValue={'DASHBOARD'} className="">
                                         <option>Add Service</option>
                                         <option>Manage Service</option>
                                         <option>Booked-Services</option>

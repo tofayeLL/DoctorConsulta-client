@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
 
 
 const Register = () => {
     const [showPass, setShowPass] = useState(false);
     const [errorRegister, setErrorRegister] = useState('');
+
+    const {createUser} = useContext(AuthContext)
 
     const handleRegister = (e) => {
         e.preventDefault()
@@ -15,6 +18,37 @@ const Register = () => {
         const email = form.email.value;
         const password = form.password.value;
         console.log(name, email, photo, password);
+
+
+         /*   // validation for password
+           setErrorRegister('');
+
+           if (password.length < 6) {
+   
+               return toast.error(" passwords must be 6 characters!");
+           }
+           if (!/^(?=.*[a-z])(?=.*[A-Z]).+$/.test(password)) {
+   
+               return toast.error("password must have included at least one small and capital letter!");
+           } */
+
+
+
+
+
+
+         // create user
+         createUser(email, password)
+         .then((result) => {
+             console.log(result.user);
+            alert("Registration complete Successfully");
+             e.target.reset();
+         })
+         .catch((error) => {
+             console.log(error.message);
+             setErrorRegister(error.message);
+
+         })
     }
 
 
