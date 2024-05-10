@@ -3,17 +3,35 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Tooltip } from "react-tooltip";
+import 'react-tooltip/dist/react-tooltip.css';
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
 const Nav = () => {
-    const { user } = useContext(AuthContext);
+    const { user, logOutUser } = useContext(AuthContext);
+
+
+    const handleLogout = () => {
+        //logout user
+        logOutUser()
+            .then(() => {
+                console.log('logout successfully');
+                toast.success("Logout Successfully");
+            }).catch((error) => {
+                console.log(error.message);
+                toast.error(error.message);
+
+            });
+    }
 
 
     return (
         <div>
 
-            <div className=" bg-base-100 flex justify-between items-center py-6">
+            <div className=" bg-base-100 flex justify-between items-center py-5">
                 <div className="">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,17 +56,17 @@ const Nav = () => {
                             </li>
                         </ul>
                     </div>
-                    <a className="font-semibold text-xl">DoctorConsulta</a>
+                    <a className="font-semibold text-4xl text-cyan-600">DoctorConsulta</a>
                 </div>
                 <div className="">
                     <ul className="flex justify-center items-center  gap-8">
-                        <li className="font-semibold text-xl hover:text-cyan-400"><NavLink to={'/'}>Home</NavLink></li>
+                        <li className="font-semibold text-xl hover:text-cyan-600"><NavLink to={'/'}>Home</NavLink></li>
 
-                        <li className="font-semibold text-xl hover:text-cyan-400"><NavLink to={'/services'} >Service</NavLink></li>
+                        <li className="font-semibold text-xl hover:text-cyan-600"><NavLink to={'/services'} >Services</NavLink></li>
 
                         <li className="font-semibold text-xl">
                             <NavLink >
-                                <select value={"Dashboard"} className=" hover:text-cyan-400">
+                                <select value={"Dashboard"} className=" hover:text-cyan-600">
                                     <option>Add Service</option>
                                     <option>Manage Service</option>
                                     <option>Booked-Services</option>
@@ -62,17 +80,20 @@ const Nav = () => {
                 </div>
                 <div >
 
-                    <div className="space-x-5">
+                    <div className="">
+
                         {
                             user ?
-                                <div className="flex  justify-center items-center gap-2 ">
+
+                                <div className="flex  justify-center items-center gap-4 ">
+                                    {/* <h1>{user.photoURL}</h1> */}
                                     {/* <h1>{user.email}</h1> */}
 
-                                    <div className="tooltip tooltip-bottom lg:w-14 w-12 rounded-full border-[2px] border-cyan-700 z-10 " /* data-tip={user?.displayName || 'Tofayel'} */  >
+                                    <div className="tooltip tooltip-bottom lg:w-16 w-12 rounded-full border-[2px] border-cyan-400 z-20 " /* data-tip={user?.displayName || 'Tofayel'} */  >
 
 
 
-                                        <Tooltip id="my-tooltip" className="z-10">
+                                        <Tooltip id="my-tooltip" className="z-20">
                                             <span>{user?.displayName || 'Tofayel'}</span>
                                         </Tooltip>
 
@@ -81,7 +102,7 @@ const Nav = () => {
 
                                     </div>
 
-                                    <button  className="btn text-white hover:text-cyan-700 font-semibold lg:text-base text-xs bg-cyan-600 0">Logout</button>
+                                    <button onClick={handleLogout} className="btn text-white hover:text-cyan-700 font-semibold lg:text-base text-xs bg-cyan-600 0">Logout</button>
 
 
 
@@ -92,7 +113,7 @@ const Nav = () => {
 
                                 <div className="lg:space-x-3 space-x-2">
                                     <Link to={'/login'}><button className="btn text-white hover:text-cyan-700  font-semibold lg:text-base text-xs bg-cyan-600 0">Login</button></Link>
-                                    <Link to={'/register'} className="lg:inline md:inline hidden"><button className="btn  text-white hover:text-cyan-700 font-semibold lg:text-base text-xs  bg-cyan-600 0">Register</button></Link>
+
                                 </div>
 
                         }

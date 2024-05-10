@@ -1,15 +1,16 @@
 import { useContext, useState } from "react";
-import { FaGithub, FaGoogle } from "react-icons/fa";
+// import { FaGithub, FaGoogle } from "react-icons/fa";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { FaGoogle } from "react-icons/fa";
 
 
 const Login = () => {
     const [showPass, setShowPass] = useState(false);
-    const { signInUser } = useContext(AuthContext);
+    const { signInUser, googleLogin } = useContext(AuthContext);
 
     const handleLogin = (e) => {
         e.preventDefault()
@@ -35,10 +36,24 @@ const Login = () => {
             })
 
 
-
-
-
     }
+
+
+    const handleGoogleLogin = () => {
+        console.log('goggle login click')
+        // goggle login handler
+        googleLogin()
+            .then((result) => {
+                console.log(result.user);
+            })
+            .catch((error) => {
+                console.log(error.message);
+            })
+    }
+
+
+
+
 
 
 
@@ -82,7 +97,7 @@ const Login = () => {
 
 
                         <div>
-                            <button className="btn text-white text-lg w-full bg-cyan-700" type="submit">Login</button>
+                            <button className="btn hover:text-cyan-700 text-white text-xl w-full bg-cyan-700" type="submit">Login</button>
                         </div>
 
                         <div className="flex flex-col w-full border-opacity-50 ">
@@ -97,12 +112,12 @@ const Login = () => {
 
 
                     <div className="lg:w-[70%] w-full mx-auto" >
-                        <Link><button className="btn w-full bg-cyan-700 text-white"><FaGoogle className="text-2xl" ></FaGoogle> <span className="text-lg">Login with Google</span></button></Link>
+
+                        <Link><button onClick={handleGoogleLogin} className="btn w-full bg-cyan-700 text-white"><FaGoogle className="text-2xl" ></FaGoogle> <span className="text-lg">Login with Google</span></button></Link>
+
                     </div>
 
-                    <div className="lg:w-[70%] w-full mx-auto">
-                        <Link><button className="btn w-full bg-cyan-700 text-white"><FaGithub className="text-2xl"></FaGithub><span className="text-lg">Login with Github</span></button></Link>
-                    </div>
+
 
 
                     <div className="text-center " >
