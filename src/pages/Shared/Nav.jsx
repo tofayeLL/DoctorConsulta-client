@@ -1,15 +1,18 @@
 
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
+import { Tooltip } from "react-tooltip";
 
 
 
 const Nav = () => {
+    const { user } = useContext(AuthContext);
 
 
-    
     return (
         <div>
-          
+
             <div className=" bg-base-100 flex justify-between items-center py-6">
                 <div className="">
                     <div className="dropdown">
@@ -57,9 +60,45 @@ const Nav = () => {
 
                     </ul>
                 </div>
-                <div className="space-x-5">
-                    <button className="btn"><NavLink to={'/login'} >Sign in</NavLink></button>
-                    <button className="btn"><NavLink to={'/register'} >Register</NavLink></button>
+                <div >
+
+                    <div className="space-x-5">
+                        {
+                            user ?
+                                <div className="flex  justify-center items-center gap-2 ">
+                                    {/* <h1>{user.email}</h1> */}
+
+                                    <div className="tooltip tooltip-bottom lg:w-14 w-12 rounded-full border-[2px] border-cyan-700 z-10 " /* data-tip={user?.displayName || 'Tofayel'} */  >
+
+
+
+                                        <Tooltip id="my-tooltip" className="z-10">
+                                            <span>{user?.displayName || 'Tofayel'}</span>
+                                        </Tooltip>
+
+
+                                        <img className="w-full rounded-full p-1" alt="user img" src={user?.photoURL || 'https://ibb.co/18JhpwY'} data-tooltip-id="my-tooltip" />
+
+                                    </div>
+
+                                    <button  className="btn text-white hover:text-cyan-700 font-semibold lg:text-base text-xs bg-cyan-600 0">Logout</button>
+
+
+
+
+                                </div>
+
+                                :
+
+                                <div className="lg:space-x-3 space-x-2">
+                                    <Link to={'/login'}><button className="btn text-white hover:text-cyan-700  font-semibold lg:text-base text-xs bg-cyan-600 0">Login</button></Link>
+                                    <Link to={'/register'} className="lg:inline md:inline hidden"><button className="btn  text-white hover:text-cyan-700 font-semibold lg:text-base text-xs  bg-cyan-600 0">Register</button></Link>
+                                </div>
+
+                        }
+                    </div>
+
+
                 </div>
 
             </div>
