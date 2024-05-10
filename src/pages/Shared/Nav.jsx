@@ -1,17 +1,17 @@
 
-import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { AuthContext } from "../../providers/AuthProvider";
 import { Tooltip } from "react-tooltip";
 import 'react-tooltip/dist/react-tooltip.css';
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import useAuth from "../../hooks/useAuth";
 
 
 
 
 const Nav = () => {
-    const { user, logOutUser } = useContext(AuthContext);
+    // const { user, logOutUser } = useContext(AuthContext);
+    const { user, logOutUser } = useAuth();
 
 
     const handleLogout = () => {

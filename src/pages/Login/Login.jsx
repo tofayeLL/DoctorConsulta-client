@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 // import { FaGithub, FaGoogle } from "react-icons/fa";
 import { FiEye, FiEyeOff } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
@@ -11,6 +11,10 @@ import { FaGoogle } from "react-icons/fa";
 const Login = () => {
     const [showPass, setShowPass] = useState(false);
     const { signInUser, googleLogin } = useContext(AuthContext);
+
+
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleLogin = (e) => {
         e.preventDefault()
@@ -26,6 +30,7 @@ const Login = () => {
 
             .then((result) => {
                 console.log(result.user);
+                navigate(location?.state ? location.state : '/');
                 e.target.reset();
                 toast.success("Login Successfully");
             })
@@ -45,6 +50,8 @@ const Login = () => {
         googleLogin()
             .then((result) => {
                 console.log(result.user);
+                navigate(location?.state ? location.state : '/');
+                toast.success("Login Successfully");
             })
             .catch((error) => {
                 console.log(error.message);
