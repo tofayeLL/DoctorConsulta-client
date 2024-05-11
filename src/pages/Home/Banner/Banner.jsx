@@ -82,10 +82,10 @@ const Banner = () => {
 
 
                 <div className=' lg:absolute md:absolute flex flex-col justify-center items-center lg:translate-y-[-60vh] md:translate-y-[-60vh] lg:flex md:flex hidden py-6 text-white z-10 w-full lg:px-10 px-3 '>
-                    <div className='lg:space-y-6 md:space-y-3 space-y-2 text-center  '>
+                    <div className='lg:space-y-4 md:space-y-3 space-y-2 text-center  '>
                         <h1 className='lg:text-5xl text-xl font-bold '>
                             <Typewriter
-                                words={['Eco-Friendly Creations at EcoCrafts']}
+                                words={['What We Treat']}
                                 loop={5}
                                 cursor
                                 cursorStyle=''
@@ -96,10 +96,10 @@ const Banner = () => {
                             />
                         </h1>
 
-
-
-                        <p className='lg:w-[60%] md:w-[80%] w-full mx-auto lg:text-lg md:text-base text-sm opacity-90'>Explore EcoCrafts, where artistry meets sustainability in every handmade creation. From recycled materials to nature-inspired designs, each item tells a story of environmental stewardship. Join us in crafting a greener future, one eco-friendly masterpiece at a time.</p>
-                        <button className='btn hover:text-violet-500 bg-violet-500  outline-none text-base font-semibold text-white'><a href="#craftItem">Explore More</a></button>
+                        <p className='text-lg'>Total Mind and Body Care</p>
+                        <p className='lg:w-[60%] md:w-[80%] w-full mx-auto lg:text-lg md:text-base text-sm opacity-90'>
+                            We have online doctors and medical providers available to treat urgent care, preventive care, chronic care, everyday care, and mental health care</p>
+                        <button className='btn hover:text-cyan-600 bg-cyan-500 outline-none text-base font-semibold text-white'><a href="#craftItem">Explore More</a></button>
                     </div>
 
                 </div>

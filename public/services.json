@@ -1,0 +1,212 @@
+[
+    {
+        "image_url": "https://example.com/skin_hair_service1.jpg",
+        "service_name": "Dermatology Consultation",
+        "price": "$100",
+        "service_area": "Dermatology",
+        "description": "Consultation for various skin and hair conditions.",
+        "provider_email": "dermatologist@example.com",
+        "provider_name": "Dr. Emily Smith",
+        "provider_image": "https://example.com/dermatologist_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/skin_hair_service2.jpg",
+        "service_name": "Hair Loss Treatment",
+        "price": "$150",
+        "service_area": "Trichology",
+        "description": "Treatment for hair loss and related conditions.",
+        "provider_email": "trichologist@example.com",
+        "provider_name": "Dr. John Doe",
+        "provider_image": "https://example.com/trichologist_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/skin_hair_service3.jpg",
+        "service_name": "Acne Treatment",
+        "price": "$80",
+        "service_area": "Dermatology",
+        "description": "Treatment for acne and related skin conditions.",
+        "provider_email": "dermatologist@example.com",
+        "provider_name": "Dr. Emily Smith",
+        "provider_image": "https://example.com/dermatologist_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/cold_flu_service1.jpg",
+        "service_name": "Cold Consultation",
+        "price": "$50",
+        "service_area": "General Medicine",
+        "description": "Consultation for cold symptoms and treatment.",
+        "provider_email": "generalmedicine@example.com",
+        "provider_name": "Dr. Michael Johnson",
+        "provider_image": "https://example.com/generalmedicine_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/cold_flu_service2.jpg",
+        "service_name": "Flu Vaccination",
+        "price": "$30",
+        "service_area": "Immunization",
+        "description": "Vaccination against influenza virus.",
+        "provider_email": "immunologist@example.com",
+        "provider_name": "Dr. Sarah Lee",
+        "provider_image": "https://example.com/immunologist_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/cold_flu_service3.jpg",
+        "service_name": "Prescription for Cold Medication",
+        "price": "$20",
+        "service_area": "General Medicine",
+        "description": "Prescription for medication to alleviate cold symptoms.",
+        "provider_email": "generalmedicine@example.com",
+        "provider_name": "Dr. Michael Johnson",
+        "provider_image": "https://example.com/generalmedicine_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/mental_health_service1.jpg",
+        "service_name": "Therapy Session",
+        "price": "$120",
+        "service_area": "Psychology",
+        "description": "Therapy session with a licensed psychologist.",
+        "provider_email": "psychologist@example.com",
+        "provider_name": "Dr. Samantha Brown",
+        "provider_image": "https://example.com/psychologist_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/mental_health_service2.jpg",
+        "service_name": "Anxiety Management",
+        "price": "$200",
+        "service_area": "Psychiatry",
+        "description": "Treatment and management of anxiety disorders.",
+        "provider_email": "psychiatrist@example.com",
+        "provider_name": "Dr. David Miller",
+        "provider_image": "https://example.com/psychiatrist_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/mental_health_service3.jpg",
+        "service_name": "Depression Counseling",
+        "price": "$80",
+        "service_area": "Psychology",
+        "description": "Counseling and support for individuals with depression.",
+        "provider_email": "psychologist@example.com",
+        "provider_name": "Dr. Samantha Brown",
+        "provider_image": "https://example.com/psychologist_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/headaches_service1.jpg",
+        "service_name": "Headache Evaluation",
+        "price": "$70",
+        "service_area": "Neurology",
+        "description": "Evaluation of headaches and related conditions.",
+        "provider_email": "neurologist@example.com",
+        "provider_name": "Dr. William Clark",
+        "provider_image": "https://example.com/neurologist_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/headaches_service2.jpg",
+        "service_name": "Migraine Treatment",
+        "price": "$90",
+        "service_area": "Neurology",
+        "description": "Treatment for migraines and associated symptoms.",
+        "provider_email": "neurologist@example.com",
+        "provider_name": "Dr. William Clark",
+        "provider_image": "https://example.com/neurologist_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/headaches_service3.jpg",
+        "service_name": "Tension Headache Relief",
+        "price": "$60",
+        "service_area": "Pain Management",
+        "description": "Relief for tension headaches through various treatments.",
+        "provider_email": "painmanagement@example.com",
+        "provider_name": "Dr. Jessica Roberts",
+        "provider_image": "https://example.com/painmanagement_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/everyday_care_service1.jpg",
+        "service_name": "First Aid Assistance",
+        "price": "$20",
+        "service_area": "General Medicine",
+        "description": "Assistance with basic first aid and minor injuries.",
+        "provider_email": "generalmedicine@example.com",
+        "provider_name": "Dr. Michael Johnson",
+        "provider_image": "https://example.com/generalmedicine_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/everyday_care_service2.jpg",
+        "service_name": "Wound Care",
+        "price": "$40",
+        "service_area": "General Medicine",
+        "description": "Care for wounds including cleaning and dressing.",
+        "provider_email": "generalmedicine@example.com",
+        "provider_name": "Dr. Michael Johnson",
+        "provider_image": "https://example.com/generalmedicine_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/everyday_care_service3.jpg",
+        "service_name": "Nutritional Counseling",
+        "price": "$80",
+        "service_area": "Nutrition",
+        "description": "Counseling for nutrition and dietary needs.",
+        "provider_email": "nutritionist@example.com",
+        "provider_name": "Dr. Emma Wilson",
+        "provider_image": "https://example.com/nutritionist_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/allergies_service1.jpg",
+        "service_name": "Allergy Testing",
+        "price": "$150",
+        "service_area": "Allergy & Immunology",
+        "description": "Testing for allergies and sensitivities.",
+        "provider_email": "allergist@example.com",
+        "provider_name": "Dr. Rachel Carter",
+        "provider_image": "https://example.com/allergist_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/allergies_service2.jpg",
+        "service_name": "Immunotherapy",
+        "price": "$250",
+        "service_area": "Allergy & Immunology",
+        "description": "Treatment through allergy immunotherapy.",
+        "provider_email": "allergist@example.com",
+        "provider_name": "Dr. Rachel Carter",
+        "provider_image": "https://example.com/allergist_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/allergies_service3.jpg",
+        "service_name": "Allergy Medication",
+        "price": "$30",
+        "service_area": "General Medicine",
+        "description": "Medication for allergy relief.",
+        "provider_email": "generalmedicine@example.com",
+        "provider_name": "Dr. Michael Johnson",
+        "provider_image": "https://example.com/generalmedicine_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/prescription_refills_service1.jpg",
+        "service_name": "Prescription Renewal",
+        "price": "$25",
+        "service_area": "Prescription Services",
+        "description": "Renewal of existing prescriptions.",
+        "provider_email": "pharmacist@example.com",
+        "provider_name": "Dr. Pharmacy",
+        "provider_image": "https://example.com/pharmacist_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/prescription_refills_service2.jpg",
+        "service_name": "Medication Refill",
+        "price": "$20",
+        "service_area": "Prescription Services",
+        "description": "Refill of prescribed medications.",
+        "provider_email": "pharmacist@example.com",
+        "provider_name": "Dr. Pharmacy",
+        "provider_image": "https://example.com/pharmacist_image.jpg"
+    },
+    {
+        "image_url": "https://example.com/prescription_refills_service3.jpg",
+        "service_name": "Prescription Transfer",
+        "price": "$15",
+        "service_area": "Prescription Services",
+        "description": "Transfer of prescriptions.",
+        "provider_email": "pharmacist@example.com",
+        "provider_name": "Dr. Pharmacy",
+        "provider_image": "https://example.com/pharmacist_image.jpg"
+    }
+]

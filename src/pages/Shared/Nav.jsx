@@ -56,7 +56,7 @@ const Nav = () => {
 
                         </ul>
                     </div>
-                    <a className="font-semibold lg:text-3xl text-base text-cyan-600">DoctorConsulta</a>
+                    <a className="font-bold lg:text-3xl text-base text-cyan-500">DoctorConsulta</a>
                 </div>
 
 
@@ -108,7 +108,7 @@ const Nav = () => {
 
                                 </div>
 
-                                <button onClick={handleLogout} className="btn text-white hover:text-cyan-700 font-semibold lg:text-base text-xs bg-cyan-600 0">Logout</button>
+                                <button onClick={handleLogout} className="btn text-white hover:text-cyan-700 font-semibold lg:text-base text-xs bg-cyan-500 0">Logout</button>
 
 
 
@@ -118,7 +118,7 @@ const Nav = () => {
                             :
 
                             <div className="lg:space-x-3 space-x-2">
-                                <Link to={'/login'}><button className="btn text-white hover:text-cyan-700  font-semibold lg:text-base text-xs bg-cyan-600 0">Login</button></Link>
+                                <Link to={'/login'}><button className="btn text-white hover:text-cyan-700  font-semibold lg:text-base text-xs bg-cyan-500 0">Login</button></Link>
 
                             </div>
 

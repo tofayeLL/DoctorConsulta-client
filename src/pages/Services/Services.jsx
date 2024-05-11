@@ -1,9 +1,9 @@
 
+
 const Services = () => {
     return (
         <div>
-            <h1>This is from services</h1>
-            
+            <h1>This is form services</h1>
         </div>
     );
 };

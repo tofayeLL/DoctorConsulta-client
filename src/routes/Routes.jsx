@@ -3,9 +3,11 @@ import Root from "../layouts/Root";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
-import Services from "../pages/Services";
+
 import ProtectedRoutes from "../ProtectedRoutes/ProtectedRoutes";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Services from "../pages/Services/Services";
+import AddService from "../pages/AddService/AddService";
 
 
 const router = createBrowserRouter([
@@ -29,6 +31,10 @@ const router = createBrowserRouter([
             {
                 path: '/services',
                 element: <ProtectedRoutes><Services></Services></ProtectedRoutes>
+            },
+            {
+                path: '/addServices',
+                element: <AddService></AddService>
             },
         ]
     },
