@@ -41,7 +41,6 @@ const Nav = () => {
 
                             <li><NavLink to={'/'}>Home</NavLink></li>
                             <li><NavLink to={'/services'}>Services</NavLink></li>
-
                             <li className="">
                                 <details>
                                     <summary>Dashboard</summary>
@@ -54,6 +53,7 @@ const Nav = () => {
                                 </details>
                             </li>
 
+
                         </ul>
                     </div>
                     <a className="font-semibold lg:text-3xl text-base text-cyan-600">DoctorConsulta</a>
@@ -65,66 +65,68 @@ const Nav = () => {
                         <li><NavLink to={'/'}>Home</NavLink></li>
                         <li><NavLink to={'/services'}>Services</NavLink></li>
 
-                        <li className="">
-                            <details >
-                                <summary >Dashboard</summary>
-                                <ul className="p-2  w-44 ">
-                                    <li className="text-base "><NavLink to={'/addServices'}>Add Service</NavLink></li>
-                                    <li className="text-base"><NavLink to={'/manageServices'}>Manage Service</NavLink></li>
-                                    <li className="text-base"><NavLink to={'/bookedServices'}>Booked Service</NavLink></li>
-                                    <li className="text-base"><NavLink to={'/toDoServices'}>Service To Do</NavLink></li>
-                                </ul>
-                            </details>
-                        </li>
+                        {
+                            user && <li className="">
+                                <details >
+                                    <summary >Dashboard</summary>
+                                    <ul className="p-2  w-44 ">
+                                        <li className="text-base "><NavLink to={'/addServices'}>Add Service</NavLink></li>
+                                        <li className="text-base"><NavLink to={'/manageServices'}>Manage Service</NavLink></li>
+                                        <li className="text-base"><NavLink to={'/bookedServices'}>Booked Service</NavLink></li>
+                                        <li className="text-base"><NavLink to={'/toDoServices'}>Service To Do</NavLink></li>
+                                    </ul>
+                                </details>
+                            </li>
+                        }
 
                     </ul>
                 </div>
 
 
 
-              
-
-                    <div className="navbar-end">
-
-                        {
-                            user ?
-
-                                <div className="flex  justify-center items-center gap-4 ">
-                                    {/* <h1>{user.photoURL}</h1> */}
-                                    {/* <h1>{user.email}</h1> */}
-
-                                    <div className="tooltip tooltip-bottom lg:w-16 w-12 rounded-full border-[2px] border-cyan-400 z-20 " /* data-tip={user?.displayName || 'Tofayel'} */  >
 
 
+                <div className="navbar-end">
 
-                                        <Tooltip id="my-tooltip" className="z-20">
-                                            <span>{user?.displayName || 'Tofayel'}</span>
-                                        </Tooltip>
+                    {
+                        user ?
 
+                            <div className="flex  justify-center items-center gap-4 ">
+                                {/* <h1>{user.photoURL}</h1> */}
+                                {/* <h1>{user.email}</h1> */}
 
-                                        <img className="w-full rounded-full p-1" alt="user img" src={user?.photoURL || 'https://ibb.co/18JhpwY'} data-tooltip-id="my-tooltip" />
-
-                                    </div>
-
-                                    <button onClick={handleLogout} className="btn text-white hover:text-cyan-700 font-semibold lg:text-base text-xs bg-cyan-600 0">Logout</button>
+                                <div className="tooltip tooltip-bottom lg:w-16 w-12 rounded-full border-[2px] border-cyan-400 z-20 " /* data-tip={user?.displayName || 'Tofayel'} */  >
 
 
 
+                                    <Tooltip id="my-tooltip" className="z-20">
+                                        <span>{user?.displayName || 'Tofayel'}</span>
+                                    </Tooltip>
+
+
+                                    <img className="w-full rounded-full p-1" alt="user img" src={user?.photoURL || 'https://ibb.co/18JhpwY'} data-tooltip-id="my-tooltip" />
 
                                 </div>
 
-                                :
-
-                                <div className="lg:space-x-3 space-x-2">
-                                    <Link to={'/login'}><button className="btn text-white hover:text-cyan-700  font-semibold lg:text-base text-xs bg-cyan-600 0">Login</button></Link>
-
-                                </div>
-
-                        }
-                    </div>
+                                <button onClick={handleLogout} className="btn text-white hover:text-cyan-700 font-semibold lg:text-base text-xs bg-cyan-600 0">Logout</button>
 
 
-              
+
+
+                            </div>
+
+                            :
+
+                            <div className="lg:space-x-3 space-x-2">
+                                <Link to={'/login'}><button className="btn text-white hover:text-cyan-700  font-semibold lg:text-base text-xs bg-cyan-600 0">Login</button></Link>
+
+                            </div>
+
+                    }
+                </div>
+
+
+
 
             </div>
 
