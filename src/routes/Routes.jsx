@@ -8,6 +8,9 @@ import ProtectedRoutes from "../ProtectedRoutes/ProtectedRoutes";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Services from "../pages/Services/Services";
 import AddService from "../pages/AddService/AddService";
+import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
+import BookingDetails from "../pages/BookingDetails/BookingDetails";
+import ManageService from "../pages/ManageService/ManageService";
 
 
 const router = createBrowserRouter([
@@ -35,6 +38,21 @@ const router = createBrowserRouter([
             {
                 path: '/addServices',
                 element: <AddService></AddService>
+            },
+            {
+                path: '/services/:id',
+                element: <ServiceDetails></ServiceDetails>,
+                loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+            },
+            {
+                path: '/bookingDetails',
+                element: <BookingDetails></BookingDetails>,
+              
+            },
+            {
+                path: '/manageServices',
+                element: <ProtectedRoutes><ManageService></ManageService></ProtectedRoutes>,
+              
             },
         ]
     },

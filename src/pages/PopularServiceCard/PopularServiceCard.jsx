@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 const PopularServiceCard = ({ service }) => {
-    const { serviceName, serviceImage, servicePrice, serviceArea, description, providerName, providerEmail, providerPhoto } = service;
+    const { _id ,serviceName, serviceImage, servicePrice, serviceArea, description , providerName, providerEmail, providerPhoto } = service;
     return (
         <div>
 
@@ -12,7 +12,7 @@ const PopularServiceCard = ({ service }) => {
             <div className="rounded-xl shadow-lg my-6 border-[1px] border-[#e0e0e2]">
 
                 <div className="p-6" >
-                    <img src="" alt="" className="object-cover object-center w-full rounded-lg h-96 bg-gray-500" />
+                    <img src={serviceImage} alt="" className="object-cover object-center w-full rounded-lg h-96 bg-gray-500" />
                 </div>
 
                 <div className="flex flex-col justify-between p-6 space-y-8" >
@@ -26,7 +26,7 @@ const PopularServiceCard = ({ service }) => {
                         </div>
 
                     </div>
-                    <Link > <button type="button" className="flex lg:text-xl text-lg items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-cyan-500  text-white">View Details</button></Link>
+                    <Link to={`/services/${_id}`}> <button type="button" className="flex lg:text-xl text-lg items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-cyan-500  text-white">View Details</button></Link>
                 </div>
 
             </div>
