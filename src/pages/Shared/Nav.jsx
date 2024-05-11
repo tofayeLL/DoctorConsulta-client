@@ -108,7 +108,12 @@ const Nav = () => {
 
                                 </div>
 
-                                <button onClick={handleLogout} className="btn text-white hover:text-cyan-700 font-semibold lg:text-base text-xs bg-cyan-500 0">Logout</button>
+                                <button onClick={handleLogout} className="relative inline-flex items-center justify-center px-4 py-2 text-lg font-medium tracking-tighter text-white bg-gray-800 rounded-md group">
+                                    <span className="absolute inset-0 w-full h-full mt-1 ml-1 transition-all duration-300 ease-in-out bg-cyan-600 rounded-md group-hover:mt-0 group-hover:ml-0"></span>
+                                    <span className="absolute inset-0 w-full h-full bg-cyan-500 rounded-md "></span>
+                                    <span className="absolute inset-0 w-full h-full transition-all duration-200 ease-in-out delay-100 bg-cyan-600 rounded-md opacity-0 group-hover:opacity-100 "></span>
+                                    <span className="relative text-white transition-colors duration-200 ease-in-out delay-100 group-hover:text-white">Log out</span>
+                                </button>
 
 
 
@@ -118,7 +123,12 @@ const Nav = () => {
                             :
 
                             <div className="lg:space-x-3 space-x-2">
-                                <Link to={'/login'}><button className="btn text-white hover:text-cyan-700  font-semibold lg:text-base text-xs bg-cyan-500 0">Login</button></Link>
+                                <Link to={'/login'}><button className="relative inline-flex items-center justify-center px-4 py-2 text-lg font-medium tracking-tighter text-white bg-gray-800 rounded-md group">
+                                    <span className="absolute inset-0 w-full h-full mt-1 ml-1 transition-all duration-300 ease-in-out bg-cyan-600 rounded-md group-hover:mt-0 group-hover:ml-0"></span>
+                                    <span className="absolute inset-0 w-full h-full bg-cyan-500 rounded-md "></span>
+                                    <span className="absolute inset-0 w-full h-full transition-all duration-200 ease-in-out delay-100 bg-cyan-600 rounded-md opacity-0 group-hover:opacity-100 "></span>
+                                    <span className="relative text-white transition-colors duration-200 ease-in-out delay-100 group-hover:text-white">Log in</span>
+                                </button></Link>
 
                             </div>
 

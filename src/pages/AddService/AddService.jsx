@@ -1,8 +1,10 @@
+import Swal from "sweetalert2";
 import useAuth from "../../hooks/useAuth";
 
 
 const AddService = () => {
   const {user} = useAuth();
+  
 
 
 
@@ -19,11 +21,34 @@ const AddService = () => {
         const providerName = form.providerName.value;
         const providerEmail = form.providerEmail.value;
         const providerPhoto = form.providerPhoto.value;
-       
 
-        
+             
         const service = { serviceName, serviceImage, servicePrice, serviceArea, description, providerName ,providerEmail, providerPhoto}
         console.log(service);
+
+
+        // post
+        fetch('http://localhost:5000/services', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(service)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            if (data.insertedId) {
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'added service successfully',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                })
+                form.reset();
+
+            }
+        })
 
     }
     return (
