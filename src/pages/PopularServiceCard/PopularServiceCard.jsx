@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 
 const PopularServiceCard = ({ service }) => {
-    const { _id ,serviceName, serviceImage, servicePrice,  description , providerName,  providerPhoto } = service;
+    const { _id, serviceName, serviceImage, servicePrice, description, providerName, providerPhoto } = service;
     return (
         <div>
 
 
             {/* card 1 */}
-            <div className="rounded-xl shadow-lg my-6 border-[1px] border-[#e0e0e2]">
+            <div className="rounded-xl shadow-lg my-6 border-[1px] border-[#e0e0e2] ">
 
                 <div className="p-6" >
                     <img src={serviceImage} alt="" className="object-cover object-center w-full rounded-lg h-96 bg-gray-500" />
@@ -22,15 +22,17 @@ const PopularServiceCard = ({ service }) => {
                         <p>{description}</p>
                         <div className='flex justify-between items-center'>
                             <p className="text-2xl text-red-500 font-semibold">{servicePrice}</p>
-                         
-                        </div>
-                        <div className="border-t-[1px] border-[#54b3f3] py-2">
-                            <p className="text-lg text-cyan-600 font-medium">Service provider</p>
-                           <div className="pt-4 space-y-2">
-                           <img src={providerPhoto} alt="" className="w-24 h-24 object-cover object-center  rounded-full" />
-                           <p className="text-lg font-semibold text-cyan-700">Dr. {providerName}</p>
-                           </div>
 
+                        </div>
+                        <div className="flex lg:flex-row flex-col justify-between lg:items-center items-start">
+                            <div className="border-t-[1px] border-gray-400 py-2 ">
+                                <p className="text-lg text-cyan-600 font-medium">Service provider</p>
+                                <div className="pt-4 space-y-2">
+                                    <img src={providerPhoto} alt="" className="w-24 h-24 object-cover object-center  rounded-full" />
+                                    <p className="text-lg font-semibold text-cyan-700">Dr. {providerName}</p>
+                                </div>
+
+                            </div>
                         </div>
 
                     </div>
@@ -38,7 +40,7 @@ const PopularServiceCard = ({ service }) => {
                 </div>
 
             </div>
-           
+
 
 
         </div>

@@ -1,11 +1,11 @@
-import { FaRegStar } from "react-icons/fa";
+
 import { Link, useLoaderData } from "react-router-dom";
 
 
 const ServiceDetails = () => {
     const services = useLoaderData();
-    const { serviceName, serviceImage, servicePrice, serviceArea, description, providerName ,providerEmail, providerPhoto} = services;
-   
+    const { serviceName, serviceImage, servicePrice, serviceArea, description, providerName, providerPhoto } = services;
+
     return (
         <div>
             <h1>from service details: {services._id}</h1>
@@ -13,7 +13,7 @@ const ServiceDetails = () => {
             <section className=" text-gray-100">
                 <div className="container max-w-7xl p-6 mx-auto space-y-6 sm:space-y-12">
 
-                    <div className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 bg-cyan-500 rounded-md">
+                    <div className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 bg-cyan-400 rounded-md">
 
 
                         <div className="w-full  rounded h-full lg:col-span-7 bg-gray-500" >
@@ -24,28 +24,26 @@ const ServiceDetails = () => {
                         <div className="p-6 space-y-2 lg:col-span-5">
 
 
-                            <div className="space-y-4 divide-y divide-black">
+                            <div className="space-y-4 divide-y divide-black text-gray-900">
 
                                 <div>
-                                    <span className="font-semibold">ServiceName</span>
-                                    <h3 className="text-2xl font-semibold sm:text-4xl"></h3>
+                                    <span className="font-semibold text-lg ">ServiceName</span>
+                                    <h3 className="text-xl font-semibold sm:text-4xl">{serviceName}</h3>
                                 </div>
 
                                 <div className="pt-2">
-                                    <span className="font-semibold"> Name</span>
-                                    <h3 className="text-xl font-semibold"></h3>
+                                   
+                                    <p className="text-lg  font-medium">Service provider</p>
+                                    <div className="pt-4 space-y-2">
+                                        <img src={providerPhoto} alt="" className="w-24 h-24 object-cover object-center  rounded-full" />
+                                        <p className="text-lg font-semibold ">Dr. {providerName}</p>
+                                    </div>
                                 </div>
 
                                 <div className="space-y-2 pt-3">
 
-
-                                    <p className="text-lg  font-semibold">Price: </p>
-                                    <p className="text-lg font-semibold ">Customization:  </p>
-
-
-
-                                    <p className="text-lg font-semibold">Stock: </p>
-                                    <p className="text-lg font-semibold ">Processing:  </p>
+                                    <p className="text-lg  font-semibold">Price: {servicePrice}</p>
+                                    <p className="lg:text-lg md:text-base text-sm font-semibold ">ServiceArea: {serviceArea} </p>
 
 
                                 </div>
@@ -54,11 +52,11 @@ const ServiceDetails = () => {
 
 
 
-                                <p className="text-lg pt-3 font-semibold flex justify-start items-center gap-3">Rating:  <span><FaRegStar></FaRegStar></span></p>
+                               
 
-                                <div className="py-4">
-                                    <p className="font-semibold">OverView</p>
-                                    <p></p>
+                                <div className="py-3 space-y-2">
+                                    <p className="font-semibold text-lg">OverView</p>
+                                    <p>{description}</p>
 
                                 </div>
                                 <div className="pt-6">
