@@ -100,7 +100,7 @@ const Banner = () => {
                         <p className='lg:w-[60%] md:w-[80%] w-full mx-auto lg:text-lg md:text-base text-sm opacity-90'>
                             We have online doctors and medical providers available to treat urgent care, preventive care, chronic care, everyday care, and mental health care</p>
                         {/*  <button className='btn hover:text-cyan-600 bg-cyan-500 outline-none text-base font-semibold text-white'><a href="#craftItem">Explore More</a></button> */}
-                        <button href="#_" className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-cyan-200 rounded hover:bg-white group">
+                        <button className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-cyan-200 rounded hover:bg-white group">
 
 
                             

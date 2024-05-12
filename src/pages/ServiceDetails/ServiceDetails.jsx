@@ -4,19 +4,20 @@ import { Link, useLoaderData } from "react-router-dom";
 
 const ServiceDetails = () => {
     const services = useLoaderData();
-    // console.log(services);
+    const { serviceName, serviceImage, servicePrice, serviceArea, description, providerName ,providerEmail, providerPhoto} = services;
+   
     return (
         <div>
             <h1>from service details: {services._id}</h1>
 
             <section className=" text-gray-100">
-                <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
+                <div className="container max-w-7xl p-6 mx-auto space-y-6 sm:space-y-12">
 
                     <div className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 bg-cyan-500 rounded-md">
 
 
                         <div className="w-full  rounded h-full lg:col-span-7 bg-gray-500" >
-                            <img src="" alt="" className="h-full object-cover object-center rounded-sm" />
+                            <img src={serviceImage} alt="" className="h-full object-cover object-center rounded-sm" />
                         </div>
 
 

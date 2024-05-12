@@ -41,7 +41,7 @@ const PopularService = () => {
                 <p className="lg:w-[54%] lg:text-lg md:text-lg text-sm ">Explore our curated craft collections, showcasing innovative designs crafted with eco-conscious materials, perfect for those seeking both style and sustainability</p>
             </div>
 
-            <div className="grid lg:grid-cols-2 grid-cols-1 gap-12">
+            <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
                 {
                     services.map(service =>
                         <PopularServiceCard

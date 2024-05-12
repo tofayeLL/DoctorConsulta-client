@@ -1,4 +1,4 @@
-import { FaRegStar } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 
 
@@ -34,7 +34,7 @@ const PopularServiceCard = ({ service }) => {
                         </div>
 
                     </div>
-                    <Link to={`/services/${_id}`}> <button type="button" className="flex lg:text-xl text-lg items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-cyan-500  text-white">View Details</button></Link>
+                    <Link to={`/service/${_id}`}> <button type="button" className="flex lg:text-xl text-lg items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-cyan-500  text-white">View Details</button></Link>
                 </div>
 
             </div>
