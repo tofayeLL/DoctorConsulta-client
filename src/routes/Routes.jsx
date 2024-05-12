@@ -12,6 +12,7 @@ import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import BookingDetails from "../pages/BookingDetails/BookingDetails";
 import ManageService from "../pages/ManageService/ManageService";
 import EditService from "../pages/ManageService/EditService";
+import BookedService from "../pages/BookedService/BookedService";
 
 
 const router = createBrowserRouter([
@@ -46,8 +47,9 @@ const router = createBrowserRouter([
                 loader: ({params}) => fetch(`http://localhost:5000/service/${params.id}`)
             },
             {
-                path: '/bookingDetails',
+                path: '/bookingDetails/:id',
                 element: <BookingDetails></BookingDetails>,
+                loader: ({params}) => fetch(`http://localhost:5000/bookingDetails/${params.id}`)
               
             },
             {
@@ -59,6 +61,12 @@ const router = createBrowserRouter([
                 path: '/editService/:id',
                 element: <EditService></EditService>,
                 loader:({params}) => fetch(`http://localhost:5000/editService/${params.id}`)
+              
+            },
+            {
+                path: '/bookedServices',
+                element: <ProtectedRoutes><BookedService></BookedService></ProtectedRoutes>,
+                
               
             },
         ]

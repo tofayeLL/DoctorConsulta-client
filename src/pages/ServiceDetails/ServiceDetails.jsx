@@ -4,7 +4,7 @@ import { Link, useLoaderData } from "react-router-dom";
 
 const ServiceDetails = () => {
     const services = useLoaderData();
-    const { serviceName, serviceImage, servicePrice, serviceArea, description, providerName, providerPhoto } = services;
+    const { _id, serviceName, serviceImage, servicePrice, serviceArea, description, providerName, providerPhoto } = services;
 
     return (
         <div>
@@ -32,7 +32,7 @@ const ServiceDetails = () => {
                                 </div>
 
                                 <div className="pt-2">
-                                   
+
                                     <p className="text-lg  font-medium">Service provider</p>
                                     <div className="pt-4 space-y-2">
                                         <img src={providerPhoto} alt="" className="w-24 h-24 object-cover object-center  rounded-full" />
@@ -52,7 +52,7 @@ const ServiceDetails = () => {
 
 
 
-                               
+
 
                                 <div className="py-3 space-y-2">
                                     <p className="font-semibold text-lg">OverView</p>
@@ -60,7 +60,7 @@ const ServiceDetails = () => {
 
                                 </div>
                                 <div className="pt-6">
-                                    <Link to={'/bookingDetails'}><button className="relative inline-flex items-center justify-center px-4 py-3 text-lg font-medium tracking-tighter text-white bg-gray-800 rounded-md group">
+                                    <Link to={`/bookingDetails/${_id}`}><button className="relative inline-flex items-center justify-center px-4 py-3 text-lg font-medium tracking-tighter text-white bg-gray-800 rounded-md group">
                                         <span className="absolute inset-0 w-full h-full mt-1 ml-1 transition-all duration-300 ease-in-out bg-cyan-300 rounded-md group-hover:mt-0 group-hover:ml-0"></span>
                                         <span className="absolute inset-0 w-full h-full bg-cyan-100 rounded-md "></span>
                                         <span className="absolute inset-0 w-full h-full transition-all duration-200 ease-in-out delay-100 bg-white rounded-md opacity-0 group-hover:opacity-100 "></span>
