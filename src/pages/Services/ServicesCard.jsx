@@ -1,9 +1,10 @@
 
+import { FaLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 
 const ServicesCard = ({ service }) => {
-    const {_id, serviceName, serviceImage, servicePrice, serviceArea, description, providerName,  providerPhoto } = service;
+    const { _id, serviceName, serviceImage, servicePrice, serviceArea, description, providerName, providerPhoto } = service;
     return (
         <div>
 
@@ -23,9 +24,14 @@ const ServicesCard = ({ service }) => {
                             <div className="p-5 space-y-2 lg:col-span-5">
                                 <h3 className="text-2xl font-semibold sm:text-4xl  group-focus:underline">{serviceName}</h3>
                                 <p className="text-base">{description}</p>
+
+                                <p className="text-xl  font-semibold">Price: {servicePrice}</p>
+
+
                                 <div className="pb-2">
-                                    <p className="text-xl  font-semibold">Price: {servicePrice}</p>
-                                    <p className="text-lg font-semibold">Service Area: {serviceArea}</p>
+                                  
+                                    <p className="text-lg font-semibold flex justify-start items-center gap-2">
+                                        <span><FaLocationDot></FaLocationDot></span> {serviceArea}</p>
                                 </div>
 
                                 <div className="flex lg:flex-row flex-col justify-between lg:items-center items-start">

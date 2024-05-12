@@ -16,7 +16,7 @@ const ManageService = () => {
                 console.log(data.data);
                 setServices(data.data)
             })
-    }, [])
+    }, [user?.email])
     
 
 
@@ -26,7 +26,10 @@ const ManageService = () => {
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
                 {
                     services.map(service => <ManageServiceCard 
+                        
                         service={service}
+                        services={services}
+                        setServices={setServices}
                         key={service._id}></ManageServiceCard> )
                 }
             </div>
