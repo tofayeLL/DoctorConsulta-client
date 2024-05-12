@@ -14,7 +14,7 @@ const PopularService = () => {
         axios.get('http://localhost:5000/services')
             .then(data => {
                 console.log(data.data);
-                setServices(data.data.slice(0, 6))
+                setServices(data.data.slice(0, 10))
             })
     }, [])
 
@@ -51,7 +51,7 @@ const PopularService = () => {
 
 
             </div>
-            <div>
+            <div className="mt-3">
                 <Link to={'/services'}><button  className="relative inline-flex items-center justify-center px-10 py-4 text-lg font-medium tracking-tighter text-white bg-gray-800 rounded-md group">
                     <span className="absolute inset-0 w-full h-full mt-1 ml-1 transition-all duration-300 ease-in-out bg-cyan-600 rounded-md group-hover:mt-0 group-hover:ml-0"></span>
                     <span className="absolute inset-0 w-full h-full bg-cyan-100 rounded-md "></span>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 const PopularServiceCard = ({ service }) => {
-    const { _id ,serviceName, serviceImage, servicePrice, serviceArea, description , providerName, providerEmail, providerPhoto } = service;
+    const { _id ,serviceName, serviceImage, servicePrice,  description , providerName,  providerPhoto } = service;
     return (
         <div>
 
@@ -15,14 +15,22 @@ const PopularServiceCard = ({ service }) => {
                     <img src={serviceImage} alt="" className="object-cover object-center w-full rounded-lg h-96 bg-gray-500" />
                 </div>
 
-                <div className="flex flex-col justify-between p-6 space-y-8" >
+                <div className="flex flex-col justify-between px-6 pb-6 space-y-5" >
                     <div className="space-y-4" >
 
-                        <h2 className="text-xl font-semibold tracking-wide text-violet-800 ">{}</h2>
+                        <h2 className="text-2xl font-semibold tracking-wide text-cyan-600 ">{serviceName}</h2>
                         <p>{description}</p>
                         <div className='flex justify-between items-center'>
-                            <p className="text-xl text-red-400 font-semibold">{}</p>
-                            <p className="text-lg font-semibold flex justify-center items-center gap-3">{} <span><FaRegStar></FaRegStar></span></p>
+                            <p className="text-2xl text-red-500 font-semibold">{servicePrice}</p>
+                         
+                        </div>
+                        <div className="border-t-[1px] border-[#54b3f3] py-2">
+                            <p className="text-lg text-cyan-600 font-medium">Service provider</p>
+                           <div className="pt-4 space-y-2">
+                           <img src={providerPhoto} alt="" className="w-24 h-24 object-cover object-center  rounded-full" />
+                           <p className="text-lg font-semibold text-cyan-700">Dr. {providerName}</p>
+                           </div>
+
                         </div>
 
                     </div>
