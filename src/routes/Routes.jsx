@@ -11,6 +11,7 @@ import AddService from "../pages/AddService/AddService";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import BookingDetails from "../pages/BookingDetails/BookingDetails";
 import ManageService from "../pages/ManageService/ManageService";
+import EditService from "../pages/ManageService/EditService";
 
 
 const router = createBrowserRouter([
@@ -52,6 +53,12 @@ const router = createBrowserRouter([
             {
                 path: '/manageServices',
                 element: <ProtectedRoutes><ManageService></ManageService></ProtectedRoutes>,
+              
+            },
+            {
+                path: '/editService/:id',
+                element: <EditService></EditService>,
+                loader:({params}) => fetch(`http://localhost:5000/editService/${params.id}`)
               
             },
         ]

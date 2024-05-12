@@ -13,7 +13,7 @@ const ManageService = () => {
         // get
         axios.get(`http://localhost:5000/myServices/${user?.email}`)
             .then(data => {
-                console.log(data.data);
+                // console.log(data.data);
                 setServices(data.data)
             })
     }, [user?.email])

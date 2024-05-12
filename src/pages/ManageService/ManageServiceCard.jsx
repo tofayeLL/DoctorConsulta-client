@@ -1,5 +1,6 @@
 
 import { FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
@@ -34,8 +35,8 @@ const ManageServiceCard = ({ service, services, setServices }) => {
                                 });
 
                                 // delete from layout
-                               const remainingService = services.filter(item => item._id !== _id);
-                               setServices(remainingService);
+                                const remainingService = services.filter(item => item._id !== _id);
+                                setServices(remainingService);
 
                             }
                         })
@@ -84,21 +85,19 @@ const ManageServiceCard = ({ service, services, setServices }) => {
 
                     </div>
                     <div className='flex  gap-4 justify-between items-center'>
+
+                        {/* Edit button */}
                         <div className='flex-1'>
-                            {/*  <Link to={`/myCraft/${_id}`}> <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-violet-400  text-white">Edit</button></Link> */}
-
-                            <button className="relative w-full rounded  py-2.5 overflow-hidden group bg-cyan-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-green-400 text-gray-800 hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300">
-                                <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
-                                <span className="relative text-xl font-medium">Edit</span>
-                            </button>
-
-
+                            <Link to={`/editService/${_id}`}>
+                                <button className="relative w-full rounded  py-2.5 overflow-hidden group bg-cyan-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-green-400 text-gray-800 hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300">
+                                    <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                                    <span className="relative text-xl font-medium">Edit</span>
+                                </button>
+                            </Link>
                         </div>
 
-
+                        {/* Delete button */}
                         <div className='flex-1 '>
-                            {/*  <button onClick={() => handleDelete(_id)} type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-violet-400  text-white">Delete</button> */}
-
                             <button onClick={() => handleDelete(_id)} className="relative w-full rounded  py-2.5 overflow-hidden group bg-cyan-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-green-400 text-gray-800 hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300">
                                 <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
                                 <span className="relative text-xl font-medium">Delete</span>

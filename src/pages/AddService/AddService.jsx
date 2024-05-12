@@ -117,7 +117,10 @@ const AddService = () => {
                             <span className="label-text lg:text-lg text-base font-semibold">Service Description</span>
                         </label>
 
-                        <input type="text" name="description" placeholder="Service Description" className="input input-bordered" required />
+                        <textarea  name="description" placeholder="Service Description" className="textarea textarea-bordered textarea-sm w-full d" required >
+                        </textarea>
+
+                       
                        
 
                     </div>
@@ -151,13 +154,7 @@ const AddService = () => {
 
                         <input type="text" defaultValue={user?.photoURL} name="providerPhoto" placeholder="Photo Url" className="input input-bordered" required />
                        
-
                     </div>
-
-
-
-
-
 
 
 
