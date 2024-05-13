@@ -10,8 +10,8 @@ import icon5 from '../../../assets/images/mediarecord.png';
 const Membership = () => {
     return (
         <div>
-            <div className='border-b-4 text-[#143566] text-4xl font-bold pb-6'>
-                <h1>Additional membership benefits</h1>
+            <div className='border-b-4 text-[#143566] text-center   font-bold py-8'>
+                <h1 className='text-5xl'>Additional membership benefits</h1>
 
             </div>
 

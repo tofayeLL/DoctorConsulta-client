@@ -21,11 +21,11 @@ const Member = () => {
                 </div>
 
 
-                <div className="p-10">
+                <div className="lg:p-10 md:p-10 p-0">
 
 
                     {/* grid card */}
-                    <div className="grid grid-cols-2 gap-12">
+                    <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-12 gap-8 ">
 
                         {/* card 1 */}
                         <div className="rounded-2xl shadow-md my-6 p-6  bg-white">
@@ -36,7 +36,7 @@ const Member = () => {
                                     <div className="space-y-6">
                                         <p><span className="bg-cyan-300 px-3 font-semibold rounded-md py-2 text-lg">option 1</span></p>
 
-                                        <h1 className="text-4xl font-bold text-[#143566] ">3-month membership</h1>
+                                        <h1 className="lg:text-4xl md:text-3xl text-xl font-bold text-[#143566] ">3-month membership</h1>
                                     </div>
 
 
@@ -56,7 +56,7 @@ const Member = () => {
 
 
                                     <div className='flex justify-between items-center'>
-                                        <p className="text-2xl  font-bold">Total due at first visit</p>
+                                        <p className="lg:text-2xl md:text-xl text-md font-bold">Total due at first visit</p>
                                         <p className="text-2xl font-bold flex justify-center items-center "> <span><BsCurrencyDollar></BsCurrencyDollar></span>99</p>
                                     </div>
 
@@ -66,7 +66,7 @@ const Member = () => {
                                     <button className="relative inline-flex items-center justify-center p-4 px-5 py-4 overflow-hidden font-medium text-cyan-600 transition duration-300 ease-out rounded-full  group hover:ring-1 hover:ring-cyan-200 w-full">
                                         <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-cyan-600 via-cyan-600 to-cyan-500"></span>
                                         <span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-cyan-200-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
-                                        <span className="relative text-white text-xl ">Choose 3-month membership</span>
+                                        <span className="relative text-white lg:text-xl  ">Choose 3-month membership</span>
                                     </button>
 
 
@@ -84,7 +84,7 @@ const Member = () => {
                                     <div className="space-y-6">
                                         <p><span className="bg-cyan-300 px-3 font-semibold rounded-md py-2 text-lg">option 2</span></p>
 
-                                        <h1 className="text-4xl font-bold text-[#143566] ">1.5-year membership</h1>
+                                        <h1 className="lg:text-4xl md:text-3xl text-xl font-bold text-[#143566] ">1.5-year membership</h1>
                                     </div>
 
 
@@ -104,7 +104,7 @@ const Member = () => {
 
 
                                     <div className='flex justify-between items-center'>
-                                        <p className="text-2xl  font-bold">Total due at first visit</p>
+                                        <p className="lg:text-2xl md:text-xl text-md  font-bold">Total due at first visit</p>
                                         <p className="text-2xl font-bold flex justify-center items-center "> <span><BsCurrencyDollar></BsCurrencyDollar></span>180</p>
                                     </div>
 
@@ -114,7 +114,7 @@ const Member = () => {
                                     <button className="relative inline-flex items-center justify-center p-4 px-5 py-4 overflow-hidden font-medium text-cyan-600 transition duration-300 ease-out rounded-full  group hover:ring-1 hover:ring-cyan-200 w-full">
                                         <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-cyan-600 via-cyan-600 to-cyan-500"></span>
                                         <span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-cyan-200-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
-                                        <span className="relative text-white text-xl ">Choose 1.5-year membership</span>
+                                        <span className="relative text-white lg:text-xl ">Choose 1.5-year membership</span>
                                     </button>
                                 </Link>
 
