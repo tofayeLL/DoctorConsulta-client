@@ -31,9 +31,9 @@ const EditService = () => {
         // console.log(service);
 
         // update 
-        axios.put(`http://localhost:5000/service/${_id}`, service)
+        axios.put(`https://doctor-consulta-server.vercel.app/service/${_id}`, service)
             .then(data => {
-                console.log(data.data);
+                // console.log(data.data);
                 if (data.data.modifiedCount > 0) {
                     Swal.fire({
                         title: 'Success!',

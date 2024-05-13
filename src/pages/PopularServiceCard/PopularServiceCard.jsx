@@ -9,7 +9,7 @@ const PopularServiceCard = ({ service }) => {
 
 
             {/* card 1 */}
-            <div className="rounded-xl shadow-lg my-6 lg:w-[80vh]">
+            <div className="rounded-xl shadow-lg my-6 lg:w-[85vh]">
 
                 <div className="" >
                     <img src={serviceImage} alt="" className="object-cover object-center w-full rounded-t-lg rounded-b-lg h-80 bg-gray-500" />

@@ -25,11 +25,11 @@ const AddService = () => {
 
 
         const service = { serviceName, serviceImage, servicePrice, serviceArea, description, providerName, providerEmail, providerPhoto }
-        console.log(service);
+        // console.log(service);
 
 
         // post
-        fetch('http://localhost:5000/services', {
+        fetch('https://doctor-consulta-server.vercel.app/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -38,7 +38,7 @@ const AddService = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 if (data.insertedId) {
                     Swal.fire({
                         title: 'Success!',

@@ -11,7 +11,7 @@ const BookedService = () => {
 
     useEffect(() => {
         // get
-        axios.get(`http://localhost:5000/bookedServices/${user?.email}`)
+        axios.get(`https://doctor-consulta-server.vercel.app/bookedServices/${user?.email}`)
             .then(data => {
                 // console.log(data.data);
                 setBookedService(data.data);

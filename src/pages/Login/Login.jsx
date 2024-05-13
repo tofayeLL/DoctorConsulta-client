@@ -22,7 +22,7 @@ const Login = () => {
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
+        // console.log(email, password);
 
 
 
@@ -46,7 +46,7 @@ const Login = () => {
 
 
     const handleGoogleLogin = () => {
-        console.log('goggle login click')
+        // console.log('goggle login click')
         // goggle login handler
         googleLogin()
             .then((result) => {

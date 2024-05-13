@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import PopularServiceCard from "../PopularServiceCard/PopularServiceCard";
-import { Typewriter } from "react-simple-typewriter";
+// import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -11,9 +11,9 @@ const PopularService = () => {
 
     useEffect(() => {
         // get
-        axios.get('http://localhost:5000/services')
+        axios.get('https://doctor-consulta-server.vercel.app/services')
             .then(data => {
-                console.log(data.data);
+                // console.log(data.data);
                 setServices(data.data.slice(0, 6))
             })
     }, [])
@@ -24,9 +24,9 @@ const PopularService = () => {
 
 
                 <h1 className="lg:text-5xl text-2xl text-center font-bold text-cyan-700 " >
+                    Our Popular Services
 
-
-                    <Typewriter
+                    {/*  <Typewriter
                         words={['Our Popular Services']}
                         loop={5}
                         cursor
@@ -35,13 +35,13 @@ const PopularService = () => {
                         deleteSpeed={50}
                         delaySpeed={1000}
 
-                    />
+                    /> */}
 
                 </h1>
                 <p className="lg:w-[68%] mx-auto lg:text-lg md:text-lg text-sm text-center ">Explore our curated craft collections, showcasing innovative designs crafted with eco-conscious materials, perfect for those seeking both style and sustainability</p>
             </div>
 
-            <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-6">
                 {
                     services.map(service =>
                         <PopularServiceCard
@@ -52,7 +52,7 @@ const PopularService = () => {
 
             </div>
             <div className="mt-3">
-                <Link to={'/services'}><button  className="relative inline-flex items-center justify-center px-10 py-4 text-lg font-medium tracking-tighter text-white bg-gray-800 rounded-md group">
+                <Link to={'/services'}><button className="relative inline-flex items-center justify-center px-10 py-4 text-lg font-medium tracking-tighter text-white bg-gray-800 rounded-md group">
                     <span className="absolute inset-0 w-full h-full mt-1 ml-1 transition-all duration-300 ease-in-out bg-cyan-600 rounded-md group-hover:mt-0 group-hover:ml-0"></span>
                     <span className="absolute inset-0 w-full h-full bg-cyan-100 rounded-md "></span>
                     <span className="absolute inset-0 w-full h-full transition-all duration-200 ease-in-out delay-100 bg-cyan-600 rounded-md opacity-0 group-hover:opacity-100 "></span>

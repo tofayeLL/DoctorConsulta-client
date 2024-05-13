@@ -21,12 +21,12 @@ const ManageServiceCard = ({ service, services, setServices }) => {
 
             .then((result) => {
                 if (result.isConfirmed) {
-                    fetch(`http://localhost:5000/myService/${_id}`, {
+                    fetch(`https://doctor-consulta-server.vercel.app/myService/${_id}`, {
                         method: "DELETE"
                     })
                         .then(res => res.json())
                         .then(data => {
-                            console.log(data);
+                            // console.log(data);
                             if (data.deletedCount > 0) {
                                 Swal.fire({
                                     title: "Deleted!",

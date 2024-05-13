@@ -12,7 +12,7 @@ const ManageService = () => {
 
     useEffect(() => {
         // get
-        axios.get(`http://localhost:5000/myServices/${user?.email}`)
+        axios.get(`https://doctor-consulta-server.vercel.app/myServices/${user?.email}`)
             .then(data => {
                 // console.log(data.data);
                 setServices(data.data)

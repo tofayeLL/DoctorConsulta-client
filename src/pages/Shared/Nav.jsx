@@ -20,10 +20,10 @@ const Nav = () => {
         //logout user
         logOutUser()
             .then(() => {
-                console.log('logout successfully');
+                // console.log('logout successfully');
                 toast.success("Logout Successfully");
             }).catch((error) => {
-                console.log(error.message);
+                // console.log(error.message);
                 toast.error(error.message);
 
             });

@@ -11,9 +11,9 @@ const Services = () => {
 
     useEffect(() => {
         // get
-        axios.get('http://localhost:5000/services')
+        axios.get('https://doctor-consulta-server.vercel.app/services')
             .then(data => {
-                console.log(data.data);
+                // console.log(data.data);
                 setServices(data.data);
             })
     }, [])

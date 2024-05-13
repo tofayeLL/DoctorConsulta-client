@@ -1,4 +1,5 @@
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import icon from '../../assets/images/icon.png'
 
 
 
@@ -14,7 +15,7 @@ const Footer = () => {
                         <div className="lg:w-1/3">
                             <a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start mb-3">
                                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-base-200">
-                                    <img className="p-1" src="" alt="" />
+                                    <img className="p-1" src={icon} alt="" />
                                 </div>
                                 <span className="self-center text-4xl font-semibold">Doctor<span className="text-cyan-600">Consulta</span></span>
                             </a>

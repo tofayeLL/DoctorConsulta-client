@@ -44,12 +44,12 @@ const router = createBrowserRouter([
             {
                 path: '/service/:id',
                 element: <ProtectedRoutes><ServiceDetails></ServiceDetails></ProtectedRoutes>,
-                loader: ({params}) => fetch(`http://localhost:5000/service/${params.id}`)
+                loader: ({params}) => fetch(`https://doctor-consulta-server.vercel.app/service/${params.id}`)
             },
             {
                 path: '/bookingDetails/:id',
                 element: <BookingDetails></BookingDetails>,
-                loader: ({params}) => fetch(`http://localhost:5000/bookingDetails/${params.id}`)
+                loader: ({params}) => fetch(`https://doctor-consulta-server.vercel.app/bookingDetails/${params.id}`)
               
             },
             {
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
             {
                 path: '/editService/:id',
                 element: <EditService></EditService>,
-                loader:({params}) => fetch(`http://localhost:5000/editService/${params.id}`)
+                loader:({params}) => fetch(`https://doctor-consulta-server.vercel.app/editService/${params.id}`)
               
             },
             {

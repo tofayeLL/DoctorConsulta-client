@@ -14,14 +14,11 @@ import axios from 'axios';
 
 const LatestBlog = () => {
 
-
-
-
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
         // get
-        axios.get('http://localhost:5000/blogs')
+        axios.get('https://doctor-consulta-server.vercel.app/blogs')
             .then(data => {
                 // console.log(data.data);
                 setBlogs(data.data);
@@ -29,7 +26,7 @@ const LatestBlog = () => {
     }, [])
 
 
-    console.log(blogs)
+    // console.log(blogs)
 
 
 
@@ -57,7 +54,7 @@ const LatestBlog = () => {
                         }}
 
                         modules={[Autoplay, FreeMode, Pagination]}
-                        className="mySwiper "
+                        className="mySwiper"
                     >
 
                         <div>
@@ -65,15 +62,15 @@ const LatestBlog = () => {
                                 blogs.map(blog => <div key={blog._id}>
                                     <SwiperSlide className='lg:p-6'>
                                         <div className='border-[1px]  border-cyan-600 rounded-lg lg:p-4   bg-white shadow-lg'>
-                                            <article className="flex flex-col dark:bg-gray-50 space-y-1">
-                                                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                                            <article className="flex flex-col dark:bg-gray-50 space-y-2">
+                                                <div >
                                                     <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src={blog.blogImage} />
-                                                </a>
+                                                </div>
 
                                                 <div className="flex flex-col flex-1 p-6 space-y-2">
-                                                    <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
 
-                                                    <a rel="noopener noreferrer" href="#" className="text-xs tracking-wider uppercase hover:underline dark:text-violet-600"><span className='bg-cyan-300 p-1 text-gray-900'>{blog.category}</span></a>
+
+                                                    <div className="text-xs tracking-wider uppercase hover:underline dark:text-violet-600"><span className='bg-cyan-300 p-1 text-gray-900'>{blog.category}</span></div>
 
                                                     <h3 className="flex-1 py-2 text-lg font-semibold leading-snug">{blog.title}</h3>
 

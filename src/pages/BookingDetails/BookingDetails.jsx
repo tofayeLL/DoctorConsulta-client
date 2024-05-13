@@ -36,13 +36,13 @@ const BookingDetails = () => {
 
 
         const service = { userName, userEmail, serviceName, serviceImage, servicePrice, serviceId, specialInstruction, date, providerName, providerEmail, status }
-        console.log(service);
+        // console.log(service);
 
         // post
-        axios.post('http://localhost:5000/bookedServices', service)
+        axios.post('https://doctor-consulta-server.vercel.app/bookedServices', service)
 
             .then(data => {
-                console.log(data.data);
+                // console.log(data.data);
                 if (data.data.insertedId) {
                     Swal.fire({
                         title: 'Success!',

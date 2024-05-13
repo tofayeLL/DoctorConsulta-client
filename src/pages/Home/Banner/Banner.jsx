@@ -105,7 +105,7 @@ const Banner = () => {
 
                             
                                 <span className="w-48 h-48 rounded rotate-[-40deg] bg-cyan-500 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                                <span className="relative font-semibold text-xl w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Explore More</span>
+                                <span className="relative font-semibold text-xl w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Start Visit</span>
                            
 
 
