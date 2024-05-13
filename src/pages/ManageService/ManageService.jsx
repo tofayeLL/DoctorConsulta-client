@@ -22,7 +22,7 @@ const ManageService = () => {
 
     return (
         <div>
-            <h1>services:{services.length}</h1>
+           
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
                 {
                     services.map(service => <ManageServiceCard 

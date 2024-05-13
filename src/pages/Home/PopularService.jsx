@@ -14,7 +14,7 @@ const PopularService = () => {
         axios.get('http://localhost:5000/services')
             .then(data => {
                 console.log(data.data);
-                setServices(data.data.slice(0, 10))
+                setServices(data.data.slice(0, 6))
             })
     }, [])
 
@@ -23,7 +23,7 @@ const PopularService = () => {
             <div className="space-y-3 lg:my-2">
 
 
-                <h1 className="lg:text-5xl text-2xl font-bold " >
+                <h1 className="lg:text-5xl text-2xl font-bold text-[#143566]" >
 
 
                     <Typewriter
@@ -41,7 +41,7 @@ const PopularService = () => {
                 <p className="lg:w-[54%] lg:text-lg md:text-lg text-sm ">Explore our curated craft collections, showcasing innovative designs crafted with eco-conscious materials, perfect for those seeking both style and sustainability</p>
             </div>
 
-            <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">
                 {
                     services.map(service =>
                         <PopularServiceCard

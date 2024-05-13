@@ -1,4 +1,5 @@
 import Banner from "./Banner/Banner";
+import Membership from "./Membership/Membership";
 import PopularService from "./PopularService";
 
 
@@ -12,6 +13,9 @@ const Home = () => {
             <div className="my-20">
                 <PopularService></PopularService>
 
+            </div>
+            <div className="my-20 container mx-auto">
+                <Membership></Membership>
             </div>
             
         </div>

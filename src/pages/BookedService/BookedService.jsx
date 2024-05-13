@@ -52,7 +52,7 @@ const BookedService = () => {
                                     
                                         <td className="">
                                             
-                                            <span className=" font-semibold rounded-md  text-cyan-600 text-lg font-medium flex">
+                                            <span className=" font-semibold rounded-md  text-cyan-600 text-lg  flex">
                                             <button>Pending</button>
                                             </span>
                                         </td>

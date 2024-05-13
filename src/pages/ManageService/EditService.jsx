@@ -64,7 +64,7 @@ const EditService = () => {
 
 
                     <form onSubmit={handleAdd} className="card-body" >
-                        <h1 className="text-4xl font-bold text-cyan-500">Edit Service</h1>
+                        <h1 className="text-4xl font-bold text-cyan-500">Update Service</h1>
 
                         <div className="grid grid-cols-2 gap-6 ">
 
@@ -163,7 +163,7 @@ const EditService = () => {
 
 
                         <div className="form-control mt-6">
-                            <input type="submit" value="Edit Service" className="btn text-xl text-white outline-non bg-cyan-500" />
+                            <input type="submit" value="Update Service" className="btn text-xl text-white outline-non bg-cyan-500" />
                         </div>
 
 

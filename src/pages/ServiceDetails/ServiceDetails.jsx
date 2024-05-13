@@ -8,7 +8,7 @@ const ServiceDetails = () => {
 
     return (
         <div>
-            <h1>from service details: {services._id}</h1>
+            
 
             <section className=" text-gray-100">
                 <div className="container max-w-7xl p-6 mx-auto space-y-6 sm:space-y-12">
