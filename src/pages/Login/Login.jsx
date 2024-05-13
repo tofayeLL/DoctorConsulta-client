@@ -6,6 +6,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { FaGoogle } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 
 const Login = () => {
@@ -70,6 +71,11 @@ const Login = () => {
 
     return (
         <div>
+
+
+            <Helmet>
+                <title>Login</title>
+            </Helmet>
 
 
             <div className="flex flex-col  justify-center items-center bg-cyan-400 ">

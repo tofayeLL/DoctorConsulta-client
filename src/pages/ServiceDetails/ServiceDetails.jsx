@@ -1,4 +1,5 @@
 
+import { Helmet } from "react-helmet";
 import { Link, useLoaderData } from "react-router-dom";
 
 
@@ -8,6 +9,10 @@ const ServiceDetails = () => {
 
     return (
         <div>
+            
+            <Helmet>
+                <title>Service Details</title>
+            </Helmet>
             
 
             <section className=" text-gray-100">

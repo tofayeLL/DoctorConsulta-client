@@ -2,13 +2,14 @@ import { useLoaderData } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import Swal from "sweetalert2";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 
 const BookingDetails = () => {
     const { user } = useAuth();
 
     const service = useLoaderData();
-    const { _id,serviceName, serviceImage, servicePrice,  providerName, providerEmail } = service;
+    const { _id, serviceName, serviceImage, servicePrice, providerName, providerEmail } = service;
 
 
     const handlePurchase = (e) => {
@@ -20,41 +21,41 @@ const BookingDetails = () => {
         const serviceImage = form.serviceImage.value;
         const servicePrice = form.servicePrice.value;
         const serviceId = form.serviceId.value;
-        
+
         const specialInstruction = form.specialInstruction.value;
         const date = form.date.value;
 
 
         const providerName = form.providerName.value;
         const providerEmail = form.providerEmail.value;
-     
+
 
         const serviceStatus = "pending";
-        const status = {serviceStatus}
+        const status = { serviceStatus }
         // console.log(status);
-        
 
-        const service = { userName, userEmail, serviceName, serviceImage, servicePrice, serviceId,  specialInstruction, date, providerName, providerEmail, status}
+
+        const service = { userName, userEmail, serviceName, serviceImage, servicePrice, serviceId, specialInstruction, date, providerName, providerEmail, status }
         console.log(service);
 
-          // post
-          axios.post('http://localhost:5000/bookedServices', service)
-       
-        .then(data => {
-            console.log(data.data);
-            if (data.data.insertedId) {
-                Swal.fire({
-                    title: 'Success!',
-                    text: 'added service successfully',
-                    icon: 'success',
-                    confirmButtonText: 'Cool'
-                })
-                form.reset();
+        // post
+        axios.post('http://localhost:5000/bookedServices', service)
 
-            }
-        })
+            .then(data => {
+                console.log(data.data);
+                if (data.data.insertedId) {
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'added service successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                    })
+                    form.reset();
 
-       
+                }
+            })
+
+
 
     }
 
@@ -65,6 +66,12 @@ const BookingDetails = () => {
 
     return (
         <div className="lg:mt-0 bg-cyan-400  lg:p-14 md:p-14 p-6">
+
+
+
+            <Helmet>
+                <title>Booking Service</title>
+            </Helmet>
 
 
 
@@ -123,8 +130,8 @@ const BookingDetails = () => {
                                 </label>
                                 <input type="text" defaultValue={user?.email} name="userEmail" placeholder="User Email" className="input input-bordered" required />
                             </div>
-                               {/* 3*/}
-                               <div className="form-control">
+                            {/* 3*/}
+                            <div className="form-control">
                                 <label className="label">
                                     <span className="label-text lg:text-lg text-base font-semibold">Service Id</span>
                                 </label>
@@ -139,7 +146,7 @@ const BookingDetails = () => {
                                 </label>
                                 <input type="text" defaultValue={serviceImage} name="serviceImage" placeholder="Image Url" className="input input-bordered" required />
                             </div>
-                         
+
                             {/* 4*/}
                             <div className="form-control">
                                 <label className="label">
@@ -155,7 +162,7 @@ const BookingDetails = () => {
 
 
                     </div>
-                  
+
 
                     {/* service provider info */}
                     <div className="form-control">
@@ -178,7 +185,7 @@ const BookingDetails = () => {
 
 
                     </div>
-                  
+
 
 
 

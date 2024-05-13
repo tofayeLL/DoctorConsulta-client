@@ -1,15 +1,23 @@
+import { Helmet } from "react-helmet";
 import Banner from "./Banner/Banner";
 import Faq from "./Faq/Faq";
 import Member from "./Member/Member";
 import Membership from "./Membership/Membership";
 import PopularService from "./PopularService";
+import LatestBlog from "./LatestBlog/LatestBlog";
 
 
 const Home = () => {
     return (
         <div>
+
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
+
+
             <div>
-                <Banner></Banner>   
+                <Banner></Banner>
             </div>
 
             <div className="my-20">
@@ -32,7 +40,11 @@ const Home = () => {
                 <Faq></Faq>
 
             </div>
-            
+            <div className="my-20 container mx-auto">
+                <LatestBlog></LatestBlog>
+
+            </div>
+
         </div>
     );
 };

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet";
 
 
 const Register = () => {
@@ -22,17 +23,17 @@ const Register = () => {
         console.log(name, email, photo, password);
 
 
-          // validation for password
-          setErrorRegister('');
+        // validation for password
+        setErrorRegister('');
 
-          if (password.length < 6) {
-  
-              return toast.error(" passwords must be 6 characters!");
-          }
-          if (!/^(?=.*[a-z])(?=.*[A-Z]).+$/.test(password)) {
-  
-              return toast.error("password must have included at least one small and capital letter!");
-          }
+        if (password.length < 6) {
+
+            return toast.error(" passwords must be 6 characters!");
+        }
+        if (!/^(?=.*[a-z])(?=.*[A-Z]).+$/.test(password)) {
+
+            return toast.error("password must have included at least one small and capital letter!");
+        }
 
 
 
@@ -61,6 +62,11 @@ const Register = () => {
 
     return (
         <div>
+
+
+            <Helmet>
+                <title>Register</title>
+            </Helmet>
 
             <div className="flex flex-col  justify-center items-center bg-cyan-400 ">
 

@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import useAuth from "../../hooks/useAuth";
+import { Helmet } from "react-helmet";
 
 
 
@@ -23,7 +24,12 @@ const BookedService = () => {
 
     return (
         <div>
-           
+
+
+            <Helmet>
+                <title>Booked Service</title>
+            </Helmet>
+
             <div className="overflow-x-auto  border-[1px] border-[#e0e0e2] rounded-md">
                 <table className="table ">
 
@@ -49,15 +55,15 @@ const BookedService = () => {
 
 
 
-                                    
-                                        <td className="">
-                                            
-                                            <span className=" font-semibold rounded-md  text-cyan-600 text-lg  flex">
-                                            <button>Pending</button>
-                                            </span>
-                                        </td>
 
-                                   
+                                    <td className="">
+
+                                        <span className=" font-semibold rounded-md  text-cyan-600 text-lg  flex">
+                                            <button>Pending</button>
+                                        </span>
+                                    </td>
+
+
 
 
 

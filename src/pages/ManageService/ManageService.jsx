@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import useAuth from "../../hooks/useAuth";
 import ManageServiceCard from "./ManageServiceCard";
+import { Helmet } from "react-helmet";
 
 const ManageService = () => {
     const {user} = useAuth();
@@ -22,6 +23,10 @@ const ManageService = () => {
 
     return (
         <div>
+            
+            <Helmet>
+                <title>Manage Service</title>
+            </Helmet>
            
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
                 {

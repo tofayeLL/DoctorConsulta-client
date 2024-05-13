@@ -35,15 +35,15 @@ const router = createBrowserRouter([
             },
             {
                 path: '/services',
-                element: <ProtectedRoutes><Services></Services></ProtectedRoutes>
+                element: <Services></Services>,
             },
             {
                 path: '/addServices',
-                element: <AddService></AddService>
+                element: <ProtectedRoutes><AddService></AddService></ProtectedRoutes>
             },
             {
                 path: '/service/:id',
-                element: <ServiceDetails></ServiceDetails>,
+                element: <ProtectedRoutes><ServiceDetails></ServiceDetails></ProtectedRoutes>,
                 loader: ({params}) => fetch(`http://localhost:5000/service/${params.id}`)
             },
             {

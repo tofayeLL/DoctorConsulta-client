@@ -1,10 +1,11 @@
 import Swal from "sweetalert2";
 import useAuth from "../../hooks/useAuth";
+import { Helmet } from "react-helmet";
 
 
 const AddService = () => {
-  const {user} = useAuth();
-  
+    const { user } = useAuth();
+
 
 
 
@@ -22,8 +23,8 @@ const AddService = () => {
         const providerEmail = form.providerEmail.value;
         const providerPhoto = form.providerPhoto.value;
 
-             
-        const service = { serviceName, serviceImage, servicePrice, serviceArea, description, providerName ,providerEmail, providerPhoto}
+
+        const service = { serviceName, serviceImage, servicePrice, serviceArea, description, providerName, providerEmail, providerPhoto }
         console.log(service);
 
 
@@ -35,25 +36,29 @@ const AddService = () => {
             },
             body: JSON.stringify(service)
         })
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-            if (data.insertedId) {
-                Swal.fire({
-                    title: 'Success!',
-                    text: 'added service successfully',
-                    icon: 'success',
-                    confirmButtonText: 'Cool'
-                })
-                form.reset();
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'added service successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                    })
+                    form.reset();
 
-            }
-        })
+                }
+            })
 
     }
     return (
         <div className="lg:mt-0 bg-cyan-400  lg:p-14 md:p-14 p-6">
-           
+
+            <Helmet>
+                <title>Add Service</title>
+            </Helmet>
+
 
 
             <div className="max-w-4xl mx-auto  bg-cyan-100 shadow-xl">
@@ -117,11 +122,11 @@ const AddService = () => {
                             <span className="label-text lg:text-lg text-base font-semibold">Service Description</span>
                         </label>
 
-                        <textarea  name="description" placeholder="Service Description" className="textarea textarea-bordered textarea-sm w-full d" required >
+                        <textarea name="description" placeholder="Service Description" className="textarea textarea-bordered textarea-sm w-full d" required >
                         </textarea>
 
-                       
-                       
+
+
 
                     </div>
 
@@ -133,7 +138,7 @@ const AddService = () => {
                         </label>
 
                         <input type="text" defaultValue={user?.displayName} name="providerName" placeholder="Provider Name" className="input input-bordered" required />
-                       
+
 
                     </div>
                     <div className="form-control">
@@ -143,7 +148,7 @@ const AddService = () => {
                         </label>
 
                         <input type="text" defaultValue={user?.email} name="providerEmail" placeholder="Provider Email" className="input input-bordered" required />
-                       
+
 
                     </div>
                     <div className="form-control">
@@ -153,7 +158,7 @@ const AddService = () => {
                         </label>
 
                         <input type="text" defaultValue={user?.photoURL} name="providerPhoto" placeholder="Photo Url" className="input input-bordered" required />
-                       
+
                     </div>
 
 

@@ -23,7 +23,7 @@ const PopularService = () => {
             <div className="space-y-3 lg:my-2">
 
 
-                <h1 className="lg:text-5xl text-2xl text-center font-bold text-[#143566]" >
+                <h1 className="lg:text-5xl text-2xl text-center font-bold text-cyan-700 " >
 
 
                     <Typewriter
@@ -38,7 +38,7 @@ const PopularService = () => {
                     />
 
                 </h1>
-                <p className="lg:w-[68%] mx-auto lg:text-lg md:text-lg text-sm text-center">Explore our curated craft collections, showcasing innovative designs crafted with eco-conscious materials, perfect for those seeking both style and sustainability</p>
+                <p className="lg:w-[68%] mx-auto lg:text-lg md:text-lg text-sm text-center ">Explore our curated craft collections, showcasing innovative designs crafted with eco-conscious materials, perfect for those seeking both style and sustainability</p>
             </div>
 
             <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">

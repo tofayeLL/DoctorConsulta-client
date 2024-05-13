@@ -1,0 +1,92 @@
+[
+    {
+        "blogImage": "https://i.ibb.co/QPHyB4M/regularcheck.jpg",
+        "title": "Understanding the Importance of Regular Checkups",
+        "author": "Dr. Smith",
+        "date": "2024-05-13",
+        "category": "Health Tips",
+        "content": "Regular checkups are essential for maintaining good health. In this blog post, we explore why checkups are important and what you can expect during a routine examination.",
+        "views": "1.2k"
+    },
+    {
+        "blogImage": "https://i.ibb.co/ySLgLnL/healthy.jpg",
+        "title": "Tips for a Healthy Lifestyle",
+        "author": "Dr. Johnson",
+        "date": "2024-05-12",
+        "category": "Health Tips",
+        "content": "Maintaining a healthy lifestyle is key to preventing many health problems. In this post, we share practical tips for eating well, exercising regularly, and managing stress.",
+        "views": "987"
+    },
+    {
+        "blogImage": "https://i.ibb.co/4txXPbs/mentalhealth.jpg",
+        "title": "The Importance of Mental Health Awareness",
+        "author": "Dr. Lee",
+        "date": "2024-05-10",
+        "category": "Mental Health",
+        "content": "Mental health is just as important as physical health. This blog post discusses the importance of raising awareness about mental health issues and reducing stigma.",
+        "views": "456"
+    },
+    {
+        "blogImage": "https://i.ibb.co/S5zNhrQ/tips.jpg",
+        "title": "Managing Chronic Conditions: Tips for Patients",
+        "author": "Dr. Patel",
+        "date": "2024-05-08",
+        "category": "Chronic Illness",
+        "content": "Living with a chronic condition can be challenging. Here, we provide practical tips and advice for patients on managing their condition and improving their quality of life.",
+        "views": "2.3k"
+    },
+    {
+        "blogImage": "https://i.ibb.co/dKCr6dM/healthyeating.jpg",
+        "title": "Healthy Eating Habits for Children",
+        "author": "Dr. Garcia",
+        "date": "2024-05-06",
+        "category": "Pediatrics",
+        "content": "Establishing healthy eating habits early in life is important for children's growth and development. This blog post offers guidance to parents on promoting nutritious eating habits for their kids.",
+        "views": "789"
+    },
+    {
+        "blogImage": "https://i.ibb.co/rtmgyyW/exercise.jpg",
+        "title": "The Benefits of Regular Exercise",
+        "author": "Dr. Kim",
+        "date": "2024-05-04",
+        "category": "Fitness",
+        "content": "Regular exercise has numerous benefits for both physical and mental health. Learn about the importance of staying active and incorporating exercise into your daily routine.",
+        "views": "345"
+    },
+    {
+        "blogImage": "https://i.ibb.co/nnG1kxD/alergys.jpg",
+        "title": "Understanding Allergies: Causes and Treatment Options",
+        "author": "Dr. Wong",
+        "date": "2024-05-02",
+        "category": "Allergies",
+        "content": "Allergies can be bothersome, but understanding their causes and treatment options can help manage symptoms effectively. This post explores common allergens and treatment strategies.",
+        "views": "234"
+    },
+    {
+        "blogImage": "https://i.ibb.co/Yy9GCwv/sleep.jpg",
+        "title": "The Importance of Sleep for Overall Health",
+        "author": "Dr. Martinez",
+        "date": "2024-04-30",
+        "category": "Wellness",
+        "content": "Quality sleep is essential for maintaining overall health and well-being. Find out why sleep is important and how to improve your sleep habits for better health.",
+        "views": "4.6k"
+    },
+    {
+        "blogImage": "https://i.ibb.co/0Vg1SdZ/injury.jpg",
+        "title": "Tips for Preventing Sports Injuries",
+        "author": "Dr. Thompson",
+        "date": "2024-04-28",
+        "category": "Sports Medicine",
+        "content": "Sports injuries can happen to anyone, but there are steps you can take to prevent them. This blog post offers tips for athletes on injury prevention and staying safe during physical activity.",
+        "views": "7.9k"
+    },
+    {
+        "blogImage": "https://i.ibb.co/rthV1qb/seniors.jpg",
+        "title": "Healthy Aging: Tips for Seniors",
+        "author": "Dr. Rodriguez",
+        "date": "2024-04-26",
+        "category": "Senior Health",
+        "content": "As we age, maintaining good health becomes increasingly important. This post provides seniors with practical tips for staying healthy and active in their golden years.",
+        "views": "123"
+    }
+]

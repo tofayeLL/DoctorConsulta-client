@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import ServicesCard from "./ServicesCard";
+import { Helmet } from "react-helmet";
 
 
 const Services = () => {
@@ -24,6 +25,10 @@ const Services = () => {
 
     return (
         <div>
+            
+            <Helmet>
+                <title>Services</title>
+            </Helmet>
            
             <div>
                 {

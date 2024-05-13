@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Helmet } from "react-helmet";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -31,18 +32,18 @@ const EditService = () => {
 
         // update 
         axios.put(`http://localhost:5000/service/${_id}`, service)
-        .then(data => {
-            console.log(data.data);
-            if(data.data.modifiedCount > 0) {
-                Swal.fire({
-                    title: 'Success!',
-                    text: 'Update Successfully',
-                    icon: 'success',
-                    confirmButtonText: 'Cool'
-                })
-            }
-        })
-        
+            .then(data => {
+                console.log(data.data);
+                if (data.data.modifiedCount > 0) {
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Update Successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                    })
+                }
+            })
+
 
 
 
@@ -54,6 +55,11 @@ const EditService = () => {
 
     return (
         <div>
+
+
+            <Helmet>
+                <title>Update Service</title>
+            </Helmet>
 
 
             <div className="lg:mt-0 bg-cyan-400  lg:p-14 md:p-14 p-6">
