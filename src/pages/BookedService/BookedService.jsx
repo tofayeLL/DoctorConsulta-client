@@ -19,6 +19,10 @@ const BookedService = () => {
     }, [user?.email])
 
     // console.log(bookedService);
+    /* if(bookedService.length <= 0){
+        return <p>You did not booked any service yet</p>
+        
+    } */
 
 
 
@@ -29,14 +33,15 @@ const BookedService = () => {
             <Helmet>
                 <title>Booked Service</title>
             </Helmet>
+            
 
             <div className="overflow-x-auto  border-[1px] border-[#e0e0e2] rounded-md">
                 <table className="table ">
 
                     <thead>
                         <tr className="bg-cyan-200 text-lg font-semibold ">
-                            <th>userName</th>
-                            <th>userEmail</th>
+                            <th>userId</th>
+                            <th>providerEmail</th>
                             <th>serviceName</th>
                             <th>servicePrice</th>
                             <th>date</th>
@@ -47,8 +52,8 @@ const BookedService = () => {
                         {
                             bookedService.map(booked =>
                                 <tr key={booked._id} className="hover">
-                                    <td>{booked.userName}</td>
-                                    <td>{booked.userEmail}</td>
+                                    <td>{booked._id}</td>
+                                    <td>{booked.providerEmail}</td>
                                     <td>{booked.serviceName}</td>
                                     <td>{booked.servicePrice}</td>
                                     <td>{booked.date}</td>
@@ -59,7 +64,7 @@ const BookedService = () => {
                                     <td className="">
 
                                         <span className=" font-semibold rounded-md  text-cyan-600 text-lg  flex">
-                                            <button>Pending</button>
+                                            <button>{booked.status?.serviceStatus}</button>
                                         </span>
                                     </td>
 

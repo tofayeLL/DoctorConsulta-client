@@ -13,6 +13,7 @@ import BookingDetails from "../pages/BookingDetails/BookingDetails";
 import ManageService from "../pages/ManageService/ManageService";
 import EditService from "../pages/ManageService/EditService";
 import BookedService from "../pages/BookedService/BookedService";
+import ServiceToDo from "../pages/ServiceToDo/ServiceToDo";
 
 
 const router = createBrowserRouter([
@@ -66,6 +67,12 @@ const router = createBrowserRouter([
             {
                 path: '/bookedServices',
                 element: <ProtectedRoutes><BookedService></BookedService></ProtectedRoutes>,
+                
+              
+            },
+            {
+                path: '/toDoServices',
+                element: <ProtectedRoutes><ServiceToDo></ServiceToDo></ProtectedRoutes>,
                 
               
             },
