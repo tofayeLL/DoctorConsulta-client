@@ -20,7 +20,7 @@ const Home = () => {
                 <Banner></Banner>
             </div>
 
-            <div className="my-20">
+            <div className="my-20 container mx-auto">
                 <PopularService></PopularService>
 
             </div>

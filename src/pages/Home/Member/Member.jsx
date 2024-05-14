@@ -9,15 +9,15 @@ const Member = () => {
     return (
         <div>
             <div className="mb-8">
-                <h1 className="p-4 lg:text-5xl md:text-2xl text-xl font-bold leading-none text-[#143566] text-center">How much does DoctorConsulta cost?</h1>
+                <h1 className="p-4 lg:text-5xl md:text-2xl text-xl font-bold leading-none  text-center">How much does DoctorConsulta cost?</h1>
             </div>
 
 
-            <section className="my-8  rounded-2xl bg-cyan-50  ">
+            <section className="my-8  rounded-2xl bg-[#e3f4fe]  ">
 
                 <div className="container space-y-3  flex flex-col justify-center items-center mx-auto mb-8 mt-6 md:p-6 md:px-12">
-                    <h1 className="p-4 lg:text-4xl md:text-2xl text-xl font-bold leading-none text-[#143566] text-center">Seeing a doctor starts with being a member</h1>
-                    <p className="lg:text-xl text-lg lg:w-[70%] text-center">This helps us keep online doctor visit costs low, like a store membership to get lower-priced groceries and household goods.</p>
+                    <h1 className="p-4 lg:text-4xl md:text-2xl text-xl font-bold leading-none  text-center">Seeing a doctor starts with being a member</h1>
+                    <p className="lg:text-xl text-lg lg:w-[70%] text-center">This helps you doctor visit costs low, like a store membership to get lower-priced groceries and household goods</p>
                 </div>
 
 
@@ -34,9 +34,9 @@ const Member = () => {
                             <div className="flex flex-col justify-between p-6 space-y-12" >
                                 <div className="space-y-10" >
                                     <div className="space-y-6">
-                                        <p><span className="bg-cyan-300 px-3 font-semibold rounded-md py-2 text-lg">option 1</span></p>
+                                        <p><span className="bg-cyan-400 px-3 font-semibold rounded-md py-2 text-lg">option 1</span></p>
 
-                                        <h1 className="lg:text-4xl md:text-3xl text-xl font-bold text-[#143566] ">3-month membership</h1>
+                                        <h1 className="lg:text-4xl md:text-3xl text-xl font-bold  ">3-month membership</h1>
                                     </div>
 
 
@@ -61,8 +61,7 @@ const Member = () => {
                                     </div>
 
                                 </div>
-                                <Link > {/* <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-cyan-500 text-xl  text-white">Choose 3-month membership</button> */}
-
+                                <Link > 
                                     <button className="relative inline-flex items-center justify-center p-4 px-5 py-4 overflow-hidden font-medium text-cyan-600 transition duration-300 ease-out rounded-full  group hover:ring-1 hover:ring-cyan-200 w-full">
                                         <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-cyan-600 via-cyan-600 to-cyan-500"></span>
                                         <span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-cyan-200-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
@@ -82,9 +81,9 @@ const Member = () => {
                             <div className="flex flex-col justify-between p-6 space-y-12" >
                                 <div className="space-y-10" >
                                     <div className="space-y-6">
-                                        <p><span className="bg-cyan-300 px-3 font-semibold rounded-md py-2 text-lg">option 2</span></p>
+                                        <p><span className="bg-cyan-400 px-3 font-semibold rounded-md py-2 text-lg">option 2</span></p>
 
-                                        <h1 className="lg:text-4xl md:text-3xl text-xl font-bold text-[#143566] ">1.5-year membership</h1>
+                                        <h1 className="lg:text-4xl md:text-3xl text-xl font-bold  ">1.5-year membership</h1>
                                     </div>
 
 
@@ -109,8 +108,7 @@ const Member = () => {
                                     </div>
 
                                 </div>
-                                <Link > {/* <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-cyan-500 text-xl  text-white">Choose 1.5-year membership</button> */}
-
+                                <Link >
                                     <button className="relative inline-flex items-center justify-center p-4 px-5 py-4 overflow-hidden font-medium text-cyan-600 transition duration-300 ease-out rounded-full  group hover:ring-1 hover:ring-cyan-200 w-full">
                                         <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-cyan-600 via-cyan-600 to-cyan-500"></span>
                                         <span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-cyan-200-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
@@ -130,7 +128,7 @@ const Member = () => {
 
 
                     <div>
-                        <div className='border-b-4 border-cyan-100 text-[#143566] text-4xl font-bold pb-8 pt-6'>
+                        <div className='border-b-4 border-cyan-100  lg:text-4xl text-2xl font-bold pb-8 pt-6'>
                             <h1>By comparison</h1>
 
                         </div>

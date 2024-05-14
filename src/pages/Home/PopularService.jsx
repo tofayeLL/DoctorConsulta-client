@@ -19,11 +19,11 @@ const PopularService = () => {
     }, [])
 
     return (
-        <div className="container mx-auto">
+        <div className="">
             <div className="space-y-3 lg:my-2">
 
 
-                <h1 className="lg:text-5xl text-2xl text-center font-bold text-cyan-700 " >
+                <h1 className="lg:text-5xl text-2xl text-center font-bold  " >
                     Our Popular Services
 
                     {/*  <Typewriter
@@ -38,10 +38,10 @@ const PopularService = () => {
                     /> */}
 
                 </h1>
-                <p className="lg:w-[68%] mx-auto lg:text-lg md:text-lg text-sm text-center ">Explore our curated craft collections, showcasing innovative designs crafted with eco-conscious materials, perfect for those seeking both style and sustainability</p>
+                <p className="lg:w-[68%] mx-auto lg:text-lg md:text-lg text-sm text-center ">Explore a curated selection of top-notch medical solutions tailored to your needs, showcasing the expertise and commitment of Doctor Consulta</p>
             </div>
 
-            <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-6">
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-14 gap-6">
                 {
                     services.map(service =>
                         <PopularServiceCard

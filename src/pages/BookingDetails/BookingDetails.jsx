@@ -46,7 +46,7 @@ const BookingDetails = () => {
                 if (data.data.insertedId) {
                     Swal.fire({
                         title: 'Success!',
-                        text: 'added service successfully',
+                        text: 'purchase  successfully',
                         icon: 'success',
                         confirmButtonText: 'Cool'
                     })
@@ -65,7 +65,7 @@ const BookingDetails = () => {
 
 
     return (
-        <div className="lg:mt-0 bg-cyan-400  lg:p-14 md:p-14 p-6">
+        <div className="lg:mt-0  lg:p-14 md:p-14 p-6   bg-[linear-gradient(45deg,rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url(https://i.ibb.co/pWFZkYy/update.jpg)] bg-center bg-cover object-cover object-center">
 
 
 
@@ -75,11 +75,11 @@ const BookingDetails = () => {
 
 
 
-            <div className="max-w-4xl mx-auto  bg-cyan-100 shadow-xl">
+            <div className="max-w-4xl mx-auto  bg-base-100 rounded-xl shadow-xl">
 
 
                 <form onSubmit={handlePurchase} className="card-body" >
-                    <h1 className="text-4xl font-bold text-cyan-500">Purchase Service</h1>
+                    <h1 className="text-4xl font-bold text-cyan-500">Book Service</h1>
 
                     <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6 ">
 

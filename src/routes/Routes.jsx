@@ -49,7 +49,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/bookingDetails/:id',
-                element: <BookingDetails></BookingDetails>,
+                element: <ProtectedRoutes><BookingDetails></BookingDetails></ProtectedRoutes>,
                 loader: ({params}) => fetch(`https://doctor-consulta-server.vercel.app/bookingDetails/${params.id}`)
               
             },
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/editService/:id',
-                element: <EditService></EditService>,
+                element: <ProtectedRoutes><EditService></EditService></ProtectedRoutes>,
                 loader:({params}) => fetch(`https://doctor-consulta-server.vercel.app/editService/${params.id}`)
               
             },

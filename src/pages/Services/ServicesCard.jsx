@@ -11,19 +11,19 @@ const ServicesCard = ({ service }) => {
 
 
             <ul className="p-2 lg:p-4 ">
-                <li className="bg-cyan-200 ">
+                <li className="bg-slate-200 rounded-lg shadow-lg">
                     <article>
                         <div className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 ">
 
                             <div className=" lg:col-span-7  p-5 ">
-                                <img src={serviceImage} alt="" className="object-cover object-center w-full   sm:h-96 h-72 " />
+                                <img src={serviceImage} alt="" className="object-cover object-center w-full   sm:h-96 h-72 rounded-lg shadow-sm" />
                             </div>
 
 
 
                             <div className="p-5 space-y-2 lg:col-span-5">
-                                <h3 className="text-2xl font-semibold sm:text-4xl  group-focus:underline">{serviceName}</h3>
-                                <p className="text-base">{description}</p>
+                                <h3 className="text-2xl font-semibold sm:text-3xl  group-focus:underline text-cyan-600">{serviceName}</h3>
+                                <p className=" text-lg">{description}</p>
 
                                 <p className="text-xl  font-semibold">Price: {servicePrice}</p>
 
@@ -36,7 +36,7 @@ const ServicesCard = ({ service }) => {
 
                                 <div className="flex lg:flex-row flex-col justify-between lg:items-center items-start">
                                     <div className="border-t-[1px] border-gray-700 py-2">
-                                        <p className="text-lg font-medium">Service provider</p>
+                                        <p className="text-lg font-medium text-cyan-600">Service provider</p>
                                         <div className="py-4 space-y-2">
                                             <img src={providerPhoto} alt="" className="w-24 h-24 object-cover object-center  rounded-full" />
                                             <p className="text-lg font-semibold ">Dr. {providerName}</p>

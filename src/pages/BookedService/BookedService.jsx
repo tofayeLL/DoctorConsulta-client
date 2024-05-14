@@ -19,10 +19,9 @@ const BookedService = () => {
     }, [user?.email])
 
     // console.log(bookedService);
-    /* if(bookedService.length <= 0){
-        return <p>You did not booked any service yet</p>
-        
-    } */
+    if (bookedService.length <= 0) {
+        return <div className="flex flex-col p-4 text-center my-20 font-bold text-cyan-500 justify-center items-center lg:text-4xl text-2xl">There is no service available for you</div>
+    }
 
 
 
@@ -33,18 +32,18 @@ const BookedService = () => {
             <Helmet>
                 <title>Booked Service</title>
             </Helmet>
-            
+
 
             <div className="overflow-x-auto  border-[1px] border-[#e0e0e2] rounded-md">
                 <table className="table ">
 
                     <thead>
-                        <tr className="bg-cyan-200 text-lg font-semibold ">
-                            <th>userId</th>
-                            <th>providerEmail</th>
-                            <th>serviceName</th>
-                            <th>servicePrice</th>
-                            <th>date</th>
+                        <tr className="bg-[#a6d8f5] text-lg font-semibold ">
+                            <th>ServiceId</th>
+                            <th>ProviderEmail</th>
+                            <th>ServiceName</th>
+                            <th>ServicePrice</th>
+                            <th>Date</th>
                             <th>Status</th>
                         </tr>
                     </thead>
@@ -63,7 +62,7 @@ const BookedService = () => {
 
                                     <td className="">
 
-                                        <span className=" font-semibold rounded-md  text-cyan-600 text-lg  flex">
+                                        <span className=" font-semibold rounded-md  text-cyan-500 text-lg  flex">
                                             <button>{booked.status?.serviceStatus}</button>
                                         </span>
                                     </td>

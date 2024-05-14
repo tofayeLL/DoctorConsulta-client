@@ -10,8 +10,8 @@ import icon5 from '../../../assets/images/mediarecord.png';
 const Membership = () => {
     return (
         <div>
-            <div className='border-b-4 text-[#143566] text-center   font-bold py-8'>
-                <h1 className='text-5xl'>Additional membership benefits</h1>
+            <div className='border-b-4  text-center   font-bold py-8'>
+                <h1 className='lg:text-5xl text-2xl'>Additional membership benefits</h1>
 
             </div>
 
@@ -30,7 +30,7 @@ const Membership = () => {
                         </div>
                         <div className='lg:text-start md:text-start text-center'>
                             <h4 className='text-2xl font-bold text-cyan-700 mb-2'>Free texting with your doctor</h4>
-                            <p className='text-xl text-[#004a7d] '>No need to pay for a visit when you have a quick question</p>
+                            <p className='text-xl  '>No need to pay for a visit when you have a quick question</p>
                         </div>
 
                     </div>
@@ -52,7 +52,7 @@ const Membership = () => {
                         </div>
                         <div className='lg:text-start md:text-start text-center'>
                             <h4 className='text-2xl font-bold text-cyan-700 mb-2'>Available when you need us</h4>
-                            <p className='text-xl text-[#004a7d]'>Same-day appointments with your doctor or on-call doctors within 15 minutes</p>
+                            <p className='text-xl '>Same-day appointments with your doctor or on-call doctors within 15 minutes</p>
                         </div>
 
                     </div>
@@ -74,7 +74,7 @@ const Membership = () => {
                         </div>
                         <div className='lg:text-start md:text-start text-center'>
                             <h4 className='text-2xl font-bold text-cyan-700 mb-2'>Kids included</h4>
-                            <p className='text-xl text-[#004a7d]'>Children ages 2 to 17 can see your doctor or their own doctor</p>
+                            <p className='text-xl '>Children ages 2 to 17 can see your doctor or their own doctor</p>
                         </div>
 
                     </div>
@@ -96,7 +96,7 @@ const Membership = () => {
                         </div>
                         <div className='lg:text-start md:text-start text-center'>
                             <h4 className='text-2xl font-bold text-cyan-700 mb-2'>Prescriptions, lab tests, specialist referrals</h4>
-                            <p className='text-xl text-[#004a7d]'>Our doctors make managing your health easy, convenient, and affordable</p>
+                            <p className='text-xl '>Our doctors make managing your health easy, convenient, and affordable</p>
                         </div>
 
                     </div>
@@ -118,7 +118,7 @@ const Membership = () => {
                         </div>
                         <div className='lg:text-start md:text-start text-center'>
                             <h4 className='text-2xl font-bold text-cyan-700 mb-2'>Access to medical records</h4>
-                            <p className='text-xl text-[#004a7d]'>Health history and visit records securely stored in one place</p>
+                            <p className='text-xl '>Health history and visit records securely stored in one place</p>
                         </div>
 
                     </div>

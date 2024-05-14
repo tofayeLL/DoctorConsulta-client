@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
 
 
-            <div className="bg-[#172944]   lg:mt-28 mt-8">
+            <div className="bg-[#1d1d27]   lg:mt-28 mt-8">
 
                 <footer className="px-4 py-6 divide-y text-white">
                     <div className="container lg:px-20 md:px-14 flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0  ">
@@ -17,7 +17,7 @@ const Footer = () => {
                                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-base-200">
                                     <img className="p-1" src={icon} alt="" />
                                 </div>
-                                <span className="self-center text-4xl font-semibold">Doctor<span className="text-cyan-600">Consulta</span></span>
+                                <span className="self-center text-4xl  text-cyan-500 font-semibold">Doctor<span className="text-cyan-500">Consulta</span></span>
                             </a>
                             
 

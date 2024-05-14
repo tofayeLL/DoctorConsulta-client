@@ -34,7 +34,7 @@ const LatestBlog = () => {
         <div className='lg:block md:block hidden'>
 
             <div className='text-center mb-12'>
-                <h2 className="text-3xl font-bold sm:text-5xl  text-[#143566] ">Read the latest health articles</h2>
+                <h2 className="text-3xl font-bold sm:text-5xl ">Read the latest health articles</h2>
             </div>
 
 

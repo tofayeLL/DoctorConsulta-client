@@ -62,11 +62,11 @@ const EditService = () => {
             </Helmet>
 
 
-            <div className="lg:mt-0 bg-cyan-400  lg:p-14 md:p-14 p-6">
+            <div className="lg:mt-0  lg:p-14 md:p-14 p-6   bg-[linear-gradient(45deg,rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url(https://i.ibb.co/WWSS6CH/registation.jpg)] bg-center bg-cover object-cover object-center">
 
 
 
-                <div className="max-w-4xl mx-auto  bg-cyan-100 shadow-xl">
+                <div className="max-w-4xl mx-auto  bg-base-100 shadow-xl rounded-xl">
 
 
                     <form onSubmit={handleAdd} className="card-body" >
