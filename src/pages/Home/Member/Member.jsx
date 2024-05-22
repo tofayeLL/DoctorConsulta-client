@@ -8,12 +8,12 @@ import icon2 from '../../../assets/images/Er visit.png';
 const Member = () => {
     return (
         <div>
-            <div className="mb-8">
+            <div className="lg:mb-8 md:mb-7 mb-4">
                 <h1 className="p-4 lg:text-5xl md:text-2xl text-xl font-bold leading-none  text-center">How much does DoctorConsulta cost?</h1>
             </div>
 
 
-            <section className="my-8  rounded-2xl bg-[#e3f4fe]  ">
+            <section className="lg:mb-8 md:mb-7 mb-2 rounded-2xl bg-[#e3f4fe]  ">
 
                 <div className="container space-y-3  flex flex-col justify-center items-center mx-auto mb-8 mt-6 md:p-6 md:px-12">
                     <h1 className="p-4 lg:text-4xl md:text-2xl text-xl font-bold leading-none  text-center">Seeing a doctor starts with being a member</h1>

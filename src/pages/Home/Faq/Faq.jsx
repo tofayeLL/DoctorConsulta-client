@@ -6,8 +6,8 @@ const Faq = () => {
 
 
             <section className="" >
-                <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8 ">
-                    <div className="text-center mb-12">
+                <div className="container flex flex-col justify-center px-4  mx-auto md:p-8 ">
+                    <div className="text-center lg:mb-6 md:mb-6 mb-4">
                         <h2 className="text-2xl font-bold sm:text-5xl   ">Frequently Asked Questions</h2>
                     </div>
 

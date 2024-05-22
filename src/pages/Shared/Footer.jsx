@@ -1,5 +1,5 @@
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import icon from '../../assets/images/icon.png'
+import icon from '../../assets/images/icon4.png'
 
 
 

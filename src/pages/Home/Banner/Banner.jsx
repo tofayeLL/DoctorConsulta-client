@@ -29,7 +29,7 @@ const Banner = () => {
                     }}
                     navigation={true}
                     modules={[Autoplay, Pagination]}
-                    className="mySwiper lg:h-[85vh] md:h-[80vh] h-[60vh] ">
+                    className="mySwiper lg:h-[85vh] md:h-[60vh] h-[36vh] lg:rounded-b-none rounded-b-md ">
 
                     {/* slide 1 */}
                     <SwiperSlide className='bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url(https://i.ibb.co/92Rqcbw/slide1.jpg)] bg-center bg-cover'>

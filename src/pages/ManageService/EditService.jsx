@@ -72,7 +72,7 @@ const EditService = () => {
                     <form onSubmit={handleAdd} className="card-body" >
                         <h1 className="text-4xl font-bold text-cyan-500">Update Service</h1>
 
-                        <div className="grid grid-cols-2 gap-6 ">
+                        <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6 ">
 
                             {/* left side form */}
                             <div>

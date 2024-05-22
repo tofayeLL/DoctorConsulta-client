@@ -20,27 +20,27 @@ const Home = () => {
                 <Banner></Banner>
             </div>
 
-            <div className="my-20 container mx-auto">
+            <div className="lg:my-20 my-10 container mx-auto">
                 <PopularService></PopularService>
 
             </div>
 
 
-            <div className="my-20 container mx-auto">
+            <div className="lg:my-20 my-10 container mx-auto">
                 <Member></Member>
 
             </div>
 
 
 
-            <div className="my-20 container mx-auto">
+            <div className="lg:my-20 my-10 container mx-auto">
                 <Membership></Membership>
             </div>
-            <div className="my-20 container mx-auto">
+            <div className="lg:my-20 my-10 container mx-auto">
                 <Faq></Faq>
 
             </div>
-            <div className="my-20 container mx-auto">
+            <div className="lg:my-20 my-10 container mx-auto">
                 <LatestBlog></LatestBlog>
 
             </div>

@@ -13,7 +13,7 @@ const Root = () => {
             </div>
 
 
-            <div >
+            <div className="lg:px-0 md:px-2 px-2">
                 {
                     navigation.state === "loading" ?
 

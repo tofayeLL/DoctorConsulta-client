@@ -15,7 +15,7 @@ const ServiceToDo = () => {
         // get
         axios.get(`https://doctor-consulta-server.vercel.app/servicesToDo/${user?.email}`)
             .then(data => {
-                console.log(data.data);
+                // console.log(data.data);
                 setBookedService(data.data);
             })
     }, [user?.email])

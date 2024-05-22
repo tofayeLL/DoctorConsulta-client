@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import useAuth from "../../hooks/useAuth";
 import { useEffect, useState } from "react";
-import logo from '../../assets/images/icon.png'
+import logo from '../../assets/images/icon4.png'
 
 
 
@@ -14,7 +14,7 @@ import logo from '../../assets/images/icon.png'
 const Nav = () => {
     // const { user, logOutUser } = useContext(AuthContext);
     const { user, logOutUser } = useAuth();
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState(  localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
 
 
     const handleLogout = () => {
@@ -88,7 +88,7 @@ const Nav = () => {
 
                         </ul>
                     </div>
-                    <a className="font-bold lg:text-3xl md:text-2xl flex items-center gap-2 text-base text-cyan-500"><span><img src={logo} alt="" className="w-10 " /></span>DoctorConsulta</a>
+                    <a className="font-bold lg:text-3xl md:text-2xl flex items-center gap-2 text-base text-cyan-500"><span><img src={logo} alt="" className="w-10  lg:inline md:inline hidden" /></span>DoctorConsulta</a>
                 </div>
 
 

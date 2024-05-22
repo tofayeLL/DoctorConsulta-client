@@ -27,7 +27,7 @@ const Services = () => {
         <div>
             
             <Helmet>
-                <title>Services</title>
+                <title>All Services</title>
             </Helmet>
            
             <div>
