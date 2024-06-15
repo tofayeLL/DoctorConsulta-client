@@ -7,6 +7,8 @@ const ServicesCard = ({ service }) => {
     const { _id, serviceName, serviceImage, servicePrice, serviceArea, description, providerName, providerPhoto } = service;
     return (
         <div>
+          
+            
 
 
 

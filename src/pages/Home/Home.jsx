@@ -7,6 +7,7 @@ import PopularService from "./PopularService";
 import LatestBlog from "./LatestBlog/LatestBlog";
 
 
+
 const Home = () => {
     return (
         <div>
@@ -19,7 +20,7 @@ const Home = () => {
             <div>
                 <Banner></Banner>
             </div>
-
+            
             <div className="lg:my-20 my-10 container mx-auto">
                 <PopularService></PopularService>
 
