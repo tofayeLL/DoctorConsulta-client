@@ -19,10 +19,10 @@ const Services = () => {
         console.log(searchText)
         setSearchText(searchText);
         // e.target.reset();
-     
+
     }
 
- 
+
 
 
     useEffect(() => {
@@ -30,19 +30,19 @@ const Services = () => {
         axios.get(`http://localhost:5000/services?search=${searchText}`)
             .then(data => {
                 // console.log(data.data);
-                setServices(data.data);              
-                
+                setServices(data.data);
+
             })
     }, [services, searchText])
 
 
     // console.log(services)
 
-  
 
-     
 
-   
+
+
+
 
 
     return (
@@ -52,9 +52,9 @@ const Services = () => {
                 <title>All Services</title>
             </Helmet>
 
-         
 
-           
+
+
 
             <div className="text-center bg-slate-200 py-8 lg:mx-4 rounded-b-md space-y-3">
                 <h1 className="lg:text-3xl text-xl font-semibold text-cyan-500">Search any kind of services you need</h1>
@@ -79,7 +79,7 @@ const Services = () => {
                 {
                     services.map(service => <ServicesCard
                         service={service}
-                       
+
                         key={service._id}></ServicesCard>)
                 }
             </div>

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 
 const PopularServiceCard = ({ service }) => {
+    console.log(service)
     const { _id, serviceName, serviceImage, servicePrice, description, providerName, providerPhoto } = service;
     return (
         <div id="popularService">

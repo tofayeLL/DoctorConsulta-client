@@ -11,12 +11,14 @@ const PopularService = () => {
 
     useEffect(() => {
         // get
-        axios.get('https://doctor-consulta-server.vercel.app/services')
+        axios.get('http://localhost:5000/popularServices')
             .then(data => {
-                // console.log(data.data);
+                console.log(data.data);
                 setServices(data.data.slice(0, 6))
             })
     }, [])
+
+    console.log(services)
 
     return (
         <div className="">
@@ -43,10 +45,10 @@ const PopularService = () => {
 
             <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-14 gap-6">
                 {
-                    services.map(service =>
+                   services.length > 0  ? services.map(service =>
                         <PopularServiceCard
                             service={service}
-                            key={service._id}></PopularServiceCard>)
+                            key={service._id}></PopularServiceCard>) : ""
                 }
 
 
