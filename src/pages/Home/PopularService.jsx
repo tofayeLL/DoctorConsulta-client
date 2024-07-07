@@ -11,7 +11,7 @@ const PopularService = () => {
 
     useEffect(() => {
         // get
-        axios.get('http://localhost:5000/popularServices')
+        axios.get('https://doctor-consulta-server.vercel.app/popularServices')
             .then(data => {
                 console.log(data.data);
                 setServices(data.data.slice(0, 6))
